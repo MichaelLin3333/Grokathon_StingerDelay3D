@@ -1,0 +1,5002 @@
+[
+  {
+    "id": "student-center",
+    "name": "Student Center",
+    "lat": 33.77375,
+    "lon": -84.39888,
+    "kind": "landmark",
+    "source": "curated campus landmark"
+  },
+  {
+    "id": "klaus",
+    "name": "Klaus Computing",
+    "lat": 33.7773,
+    "lon": -84.39615,
+    "kind": "landmark",
+    "source": "curated campus landmark"
+  },
+  {
+    "id": "kendeda",
+    "name": "Kendeda Building",
+    "lat": 33.7784,
+    "lon": -84.40015,
+    "kind": "landmark",
+    "source": "curated campus landmark"
+  },
+  {
+    "id": "clough",
+    "name": "Clough Commons",
+    "lat": 33.77493,
+    "lon": -84.3964,
+    "kind": "landmark",
+    "source": "curated campus landmark"
+  },
+  {
+    "id": "west-village",
+    "name": "West Village",
+    "lat": 33.77962,
+    "lon": -84.40471,
+    "kind": "landmark",
+    "source": "curated campus landmark"
+  },
+  {
+    "id": "midtown-marta",
+    "name": "Midtown MARTA",
+    "lat": 33.78082,
+    "lon": -84.38641,
+    "kind": "landmark",
+    "source": "curated campus landmark"
+  },
+  {
+    "id": "tech-square",
+    "name": "Tech Square",
+    "lat": 33.7768,
+    "lon": -84.38975,
+    "kind": "landmark",
+    "source": "curated campus landmark"
+  },
+  {
+    "id": "crc",
+    "name": "Campus Recreation Center",
+    "lat": 33.7754,
+    "lon": -84.4032,
+    "kind": "landmark",
+    "source": "curated campus landmark"
+  },
+  {
+    "id": "north-avenue",
+    "name": "North Avenue Apartments",
+    "lat": 33.77001,
+    "lon": -84.39145,
+    "kind": "landmark",
+    "source": "curated campus landmark"
+  },
+  {
+    "id": "library",
+    "name": "Price Gilbert Library",
+    "lat": 33.77442,
+    "lon": -84.39582,
+    "kind": "landmark",
+    "source": "curated campus landmark"
+  },
+  {
+    "id": "mccamish",
+    "name": "McCamish Pavilion",
+    "lat": 33.78083,
+    "lon": -84.3927,
+    "kind": "landmark",
+    "source": "curated campus landmark"
+  },
+  {
+    "id": "coda",
+    "name": "CODA",
+    "lat": 33.7726,
+    "lon": -84.3873,
+    "kind": "landmark",
+    "source": "curated campus landmark"
+  },
+  {
+    "id": "building-c9a8c2daff5c",
+    "name": "NCR Global Headquarters",
+    "lat": 33.7790134,
+    "lon": -84.3895286,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-97b39a9110b1",
+    "name": "Midcity Lofts",
+    "lat": 33.7778023,
+    "lon": -84.3881602,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6fa01e76ecdb",
+    "name": "725 Spring Street NW Parking",
+    "lat": 33.7746498,
+    "lon": -84.3884232,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3b06dd9d4a33",
+    "name": "Tower Square",
+    "lat": 33.7728126,
+    "lon": -84.3865864,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-456b1d56d2fa",
+    "name": "High Museum of Art",
+    "lat": 33.7896564,
+    "lon": -84.3858056,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a0d4aa497096",
+    "name": "Woodruff Arts Center",
+    "lat": 33.7890342,
+    "lon": -84.3850558,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3c421f578c2b",
+    "name": "Federal Reserve Bank of Atlanta",
+    "lat": 33.7823152,
+    "lon": -84.3853667,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-be95980fc629",
+    "name": "The Varsity",
+    "lat": 33.7717565,
+    "lon": -84.3893574,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-5f6f44212f3e",
+    "name": "Bank of America Plaza",
+    "lat": 33.7709135,
+    "lon": -84.3861436,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7843c9d9469b",
+    "name": "1100 Peachtree",
+    "lat": 33.7848463,
+    "lon": -84.3834545,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4ac8ff660d35",
+    "name": "One Atlantic Center",
+    "lat": 33.7870155,
+    "lon": -84.3873742,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-85fbee9ed7fc",
+    "name": "Arthur M. Blank Family Youth YMCA",
+    "lat": 33.7705213,
+    "lon": -84.3954609,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-afa6f58a434d",
+    "name": "Cherry L. Emerson Building",
+    "lat": 33.7779237,
+    "lon": -84.3972124,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-494aaea763e1",
+    "name": "Christopher W. Klaus Advanced Computing Building",
+    "lat": 33.7771597,
+    "lon": -84.3961809,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-0a96c6999e75",
+    "name": "College of Computing Building",
+    "lat": 33.7774288,
+    "lon": -84.3974321,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a8c6215db586",
+    "name": "Joseph M. Pettit Microelectronics Research Center",
+    "lat": 33.7766686,
+    "lon": -84.3973438,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7ddbf10b4d37",
+    "name": "John and Joyce Caddell Building",
+    "lat": 33.7766245,
+    "lon": -84.3968303,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-02870b970879",
+    "name": "Van Leer Building",
+    "lat": 33.7756177,
+    "lon": -84.3973334,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-73427b24734a",
+    "name": "Lamar Allen Sustainable Education Building",
+    "lat": 33.776161,
+    "lon": -84.3987722,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-9a1352166705",
+    "name": "Pi Kappa Phi",
+    "lat": 33.7766737,
+    "lon": -84.3942975,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ec3a89c8627e",
+    "name": "Phi Kappa Theta",
+    "lat": 33.7766437,
+    "lon": -84.3938969,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7b3efdc3edd8",
+    "name": "Alpha Tau Omega",
+    "lat": 33.7762805,
+    "lon": -84.3941226,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-47dadd367248",
+    "name": "Beta Theta Pi",
+    "lat": 33.7755134,
+    "lon": -84.3945086,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a594f48da05d",
+    "name": "Peters Parking Deck",
+    "lat": 33.7749369,
+    "lon": -84.3935464,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-eb052990465b",
+    "name": "Sigma Nu",
+    "lat": 33.7750611,
+    "lon": -84.394306,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-abe476fb0ccd",
+    "name": "Phi Delta Theta",
+    "lat": 33.7746569,
+    "lon": -84.3942051,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-f385c19d74e3",
+    "name": "Chi Phi",
+    "lat": 33.7743852,
+    "lon": -84.3941517,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-0e6dbcb183a8",
+    "name": "Old Civil Engineering Building",
+    "lat": 33.7742031,
+    "lon": -84.3946154,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-9ea2ac2cf3c8",
+    "name": "Colonel Stephen C. Hall Building",
+    "lat": 33.7741828,
+    "lon": -84.3941007,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2a2385dbea99",
+    "name": "Georgia Tech Office of Information Technology Engineering Building",
+    "lat": 33.7737968,
+    "lon": -84.3944588,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-767502d012f7",
+    "name": "Holland Building",
+    "lat": 33.7733193,
+    "lon": -84.3945898,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-943167a267e9",
+    "name": "Aaron S. French Building",
+    "lat": 33.7730201,
+    "lon": -84.3946243,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-1c75f8da7778",
+    "name": "Lyman Hall Building",
+    "lat": 33.7729807,
+    "lon": -84.3941427,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-1431cafec023",
+    "name": "W.C. & Sarah Bradley Building",
+    "lat": 33.7726349,
+    "lon": -84.3945049,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b4627e694401",
+    "name": "Lettie Pate Whithead Evans Administration Building",
+    "lat": 33.7724933,
+    "lon": -84.3946832,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-1c201170dc05",
+    "name": "Carnegie Building",
+    "lat": 33.7725079,
+    "lon": -84.3942828,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-262a051e8ca1",
+    "name": "Bill Moore Student Success Center",
+    "lat": 33.7724496,
+    "lon": -84.3939443,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d9b459fb40d3",
+    "name": "Wardlaw Center",
+    "lat": 33.7716765,
+    "lon": -84.3928254,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-85365ba3f867",
+    "name": "Burge Parking Deck",
+    "lat": 33.7710178,
+    "lon": -84.3938868,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-8e50e30869fa",
+    "name": "L. W. Robert Alumni and Faculty House",
+    "lat": 33.7710976,
+    "lon": -84.3935563,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b16a373524fd",
+    "name": "Julis L. Brown Residence Hall",
+    "lat": 33.7716723,
+    "lon": -84.3918411,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-cbc5a456d805",
+    "name": "John M. Smith Residence Hall",
+    "lat": 33.7717682,
+    "lon": -84.3912189,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-835b3aaa8360",
+    "name": "Harris Residence Hall",
+    "lat": 33.7721019,
+    "lon": -84.3917279,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c8feb8273bbe",
+    "name": "Marion L. Brittain Dining Hall",
+    "lat": 33.7724828,
+    "lon": -84.3913093,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-199141426f1d",
+    "name": "Clark Howell Residence Hall",
+    "lat": 33.7721706,
+    "lon": -84.3909303,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7135685b25c6",
+    "name": "Josiah Cloudman Residence Hall",
+    "lat": 33.7728874,
+    "lon": -84.3916976,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-f2812a2fdca2",
+    "name": "Harrison Residence Hall",
+    "lat": 33.7727802,
+    "lon": -84.3909408,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-18a5a890b4a5",
+    "name": "William H. Glenn Residence Hall",
+    "lat": 33.7734626,
+    "lon": -84.3916037,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6775791b2af2",
+    "name": "Donigan Dean Towers Residence Hall",
+    "lat": 33.7734636,
+    "lon": -84.3909953,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-06c4b2fe7e1a",
+    "name": "Floyd Field Residence Hall",
+    "lat": 33.7741877,
+    "lon": -84.3916362,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c09d330a6148",
+    "name": "Isaac Stiles Hopkins Residence Hall",
+    "lat": 33.7740974,
+    "lon": -84.3912423,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-cec590d0792a",
+    "name": "Arthur Hanson Residence Hall",
+    "lat": 33.7742016,
+    "lon": -84.3909069,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-db738775b3b8",
+    "name": "Hayes and Gray Houses",
+    "lat": 33.774899,
+    "lon": -84.3915947,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e4d21b9d115f",
+    "name": "Christian Campus Fellowship",
+    "lat": 33.7756211,
+    "lon": -84.3916509,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e48dced55dfe",
+    "name": "Theta Xi",
+    "lat": 33.7758668,
+    "lon": -84.3916657,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-fa8873a834d6",
+    "name": "Phi Kappa Sigma",
+    "lat": 33.7761186,
+    "lon": -84.3916883,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c66ae6a8645a",
+    "name": "Sigma Chi",
+    "lat": 33.7756396,
+    "lon": -84.3922234,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-269dff6117c8",
+    "name": "Phi Kappa Tau",
+    "lat": 33.7761007,
+    "lon": -84.392947,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ccc89a1f86b6",
+    "name": "Lambda Chi Alpha",
+    "lat": 33.7762286,
+    "lon": -84.3923678,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-115dec18a4c9",
+    "name": "Methodist Center (Wesley Foundation)",
+    "lat": 33.7761248,
+    "lon": -84.393407,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a3b33f9c4763",
+    "name": "Alpha Epsilon Pi",
+    "lat": 33.7741729,
+    "lon": -84.3922771,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-fd0fd381ec24",
+    "name": "Westminster Christian Fellowship (WCF)",
+    "lat": 33.7744525,
+    "lon": -84.3923536,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-765b6c5d3f80",
+    "name": "Alpha Delta Pi",
+    "lat": 33.7745343,
+    "lon": -84.3928222,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-057c85b7c158",
+    "name": "Catholic Center",
+    "lat": 33.7754695,
+    "lon": -84.3930075,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-1da4822e799b",
+    "name": "Alpha Delta Chi",
+    "lat": 33.7753842,
+    "lon": -84.3926945,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c7a620e5c333",
+    "name": "Chi Psi",
+    "lat": 33.7751991,
+    "lon": -84.3924973,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6dec824391e1",
+    "name": "Alpha Chi Omega",
+    "lat": 33.7748778,
+    "lon": -84.3928449,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ce7ec78a8e38",
+    "name": "Technology Square Research Building (TSRB)",
+    "lat": 33.7773496,
+    "lon": -84.3900559,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-63a68222b621",
+    "name": "Centergy One",
+    "lat": 33.7774693,
+    "lon": -84.3895488,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-24e30eb05d3c",
+    "name": "Scheller College of Business",
+    "lat": 33.7762751,
+    "lon": -84.3882187,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3d711a5dc6af",
+    "name": "Economic Development Building",
+    "lat": 33.7755516,
+    "lon": -84.3890575,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-12cb2e267c44",
+    "name": "The Historic Academy of Medicine",
+    "lat": 33.7783577,
+    "lon": -84.3866882,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-20414e516b9b",
+    "name": "Kappa Alpha",
+    "lat": 33.776524,
+    "lon": -84.3917198,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-24e87e203b10",
+    "name": "Delta Upsilon",
+    "lat": 33.7767081,
+    "lon": -84.3923173,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-1fe45aebe2c1",
+    "name": "Sigma Phi Epsilon",
+    "lat": 33.7766531,
+    "lon": -84.3933028,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-943a946ffb66",
+    "name": "Grace House",
+    "lat": 33.7766805,
+    "lon": -84.3931253,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7f7ebb502646",
+    "name": "Delta Chi",
+    "lat": 33.7766658,
+    "lon": -84.3928865,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c3bdcafa3044",
+    "name": "Paul H. Heffernan Architecture Archive House",
+    "lat": 33.7766949,
+    "lon": -84.3926361,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-81bcb4109609",
+    "name": "Zeta Tau Alpha",
+    "lat": 33.7771896,
+    "lon": -84.393301,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-477c5256a3b1",
+    "name": "Alpha Gamma Delta",
+    "lat": 33.7772016,
+    "lon": -84.393056,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6db4d969ce54",
+    "name": "Alpha Sigma Phi",
+    "lat": 33.7771294,
+    "lon": -84.3928484,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-150f1e415251",
+    "name": "Tau Kappa Epsilon",
+    "lat": 33.7771663,
+    "lon": -84.3923721,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a71d0d03ef2e",
+    "name": "Zeta Beta Tau",
+    "lat": 33.7778721,
+    "lon": -84.3924466,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-92bfc2202e9c",
+    "name": "Theta Chi",
+    "lat": 33.777643,
+    "lon": -84.3923047,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2fc9d68b5148",
+    "name": "O'Keefe Main Building",
+    "lat": 33.7787714,
+    "lon": -84.3921361,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-8ea32dd2cb5d",
+    "name": "Alpha Xi Delta",
+    "lat": 33.7778442,
+    "lon": -84.3918394,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ed1e26bdba8c",
+    "name": "Psi Upsilon",
+    "lat": 33.7775414,
+    "lon": -84.3917942,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-bed6bee4f562",
+    "name": "Phi Gamma Delta",
+    "lat": 33.777634,
+    "lon": -84.3932317,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-1f093b55ed2c",
+    "name": "Kappa Sigma",
+    "lat": 33.7778973,
+    "lon": -84.393235,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-240f94d66bee",
+    "name": "O'Keefe Storage Facility",
+    "lat": 33.7789596,
+    "lon": -84.3924985,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-cac11ac9c24f",
+    "name": "O'Keefe Gymnasium",
+    "lat": 33.7793058,
+    "lon": -84.3915993,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d609b3f34cea",
+    "name": "O'Keefe Custodial Services Building",
+    "lat": 33.7793352,
+    "lon": -84.3923665,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6419dc0716d5",
+    "name": "Softball Ticketing Office",
+    "lat": 33.779297,
+    "lon": -84.3927314,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-15f7d9a859ce",
+    "name": "Shirley Clements Mewborn Field",
+    "lat": 33.7792933,
+    "lon": -84.3932742,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a432f5cbcf19",
+    "name": "James K. Luck Jr. Facilities Building",
+    "lat": 33.7799535,
+    "lon": -84.3928389,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-37aed0f9ef4b",
+    "name": "Alexander Memorial Coliseum in McCamish Pavilion",
+    "lat": 33.7806595,
+    "lon": -84.3927692,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a2f7eb6457bf",
+    "name": "Luck Building",
+    "lat": 33.7802447,
+    "lon": -84.3922943,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-57e5839295ca",
+    "name": "Georgia Tech Research Institute Conference Center",
+    "lat": 33.7857205,
+    "lon": -84.3948745,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d30e9dc83db8",
+    "name": "Georgia Tech Research Institute Parking Deck",
+    "lat": 33.7850994,
+    "lon": -84.3955187,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-996a137d2f5c",
+    "name": "Family Housing Parking Deck",
+    "lat": 33.782182,
+    "lon": -84.3949774,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d431275baed3",
+    "name": "Tenth and Home Building C",
+    "lat": 33.7826519,
+    "lon": -84.3952939,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-92440eac7617",
+    "name": "Tenth and Home Building B",
+    "lat": 33.7821393,
+    "lon": -84.3952366,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-5aae5137bd5a",
+    "name": "Tenth and Home Building A",
+    "lat": 33.7818271,
+    "lon": -84.3955073,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-00df4b3a7398",
+    "name": "Tenth and Home Building D",
+    "lat": 33.7825341,
+    "lon": -84.3957937,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-bf547b9efdd5",
+    "name": "Centergy Parking Deck",
+    "lat": 33.7781436,
+    "lon": -84.3899961,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3e05f0e30d45",
+    "name": "Biltmore at Midtown Apartments",
+    "lat": 33.7777534,
+    "lon": -84.3866649,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2b343c180f5c",
+    "name": "Crum and Forster Building",
+    "lat": 33.7757195,
+    "lon": -84.3885124,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-497e4df3fe52",
+    "name": "759 West Peachtree",
+    "lat": 33.7756978,
+    "lon": -84.3866762,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2c598db5c300",
+    "name": "Tenth and Home Building G",
+    "lat": 33.78215,
+    "lon": -84.39686,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2f86a2da90b0",
+    "name": "Graduate Living Center",
+    "lat": 33.7818807,
+    "lon": -84.3965589,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-1ea193b45ed4",
+    "name": "Tenth and Home Building F",
+    "lat": 33.7827456,
+    "lon": -84.3967091,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-5797d7b172ec",
+    "name": "Tenth and Home Building E",
+    "lat": 33.7826861,
+    "lon": -84.3962682,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-59d54e0b27b9",
+    "name": "President's House",
+    "lat": 33.78091,
+    "lon": -84.3957335,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c8d162750eda",
+    "name": "Glen P. Robinson, Jr. Building",
+    "lat": 33.7798325,
+    "lon": -84.3966421,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-83abf6b449c1",
+    "name": "Parker H. Petit Biotechnology Building",
+    "lat": 33.7789644,
+    "lon": -84.3972113,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a40152e02d8b",
+    "name": "Ford Motor Company Environmental Science and Technology Building",
+    "lat": 33.7788093,
+    "lon": -84.3959191,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-8d08a252c74c",
+    "name": "North Campus Parking Deck",
+    "lat": 33.780179,
+    "lon": -84.3983089,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-84cd518f8198",
+    "name": "Bernie Marcus Nanotechnology Building",
+    "lat": 33.7788387,
+    "lon": -84.398532,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-8c18dad696a4",
+    "name": "Southern Regional Education Board",
+    "lat": 33.7811066,
+    "lon": -84.4066274,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b3531a9bf67c",
+    "name": "Eighth Street Apartments West",
+    "lat": 33.7802158,
+    "lon": -84.4055925,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7e754ac40acf",
+    "name": "Eighth Street Apartments East",
+    "lat": 33.7801812,
+    "lon": -84.4045475,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-69c1dbcd5004",
+    "name": "Eighth Street Apartments South",
+    "lat": 33.7798698,
+    "lon": -84.4051144,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-9e1f23c590ba",
+    "name": "Georgia Tech Research Corporation",
+    "lat": 33.7816378,
+    "lon": -84.4039654,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4c81fa509673",
+    "name": "Broadband Institute Residential Laboratory",
+    "lat": 33.7816644,
+    "lon": -84.4028735,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-92ef3b507d3b",
+    "name": "Caldwell Residence Hall",
+    "lat": 33.7789069,
+    "lon": -84.4044404,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-8eab71af455d",
+    "name": "Folk Residence Hall",
+    "lat": 33.7789076,
+    "lon": -84.4048208,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-59bf10861e8c",
+    "name": "Curran Street Parking Deck",
+    "lat": 33.779384,
+    "lon": -84.4055259,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e710755cb718",
+    "name": "Georgia Tech School of Music - Couch Building",
+    "lat": 33.7783541,
+    "lon": -84.4045239,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3d4ef6262074",
+    "name": "Zbar Residence Hall",
+    "lat": 33.7775284,
+    "lon": -84.4048101,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-dfbf8dc26f8a",
+    "name": "Architecture East",
+    "lat": 33.7760192,
+    "lon": -84.395378,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-8521ca33f0cf",
+    "name": "Delta Tau Delta",
+    "lat": 33.7759622,
+    "lon": -84.394801,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-deee8f8a4ab5",
+    "name": "Sigma Alpha Epsilon",
+    "lat": 33.7760575,
+    "lon": -84.3945234,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-33a99e54da69",
+    "name": "Phi Mu",
+    "lat": 33.7767219,
+    "lon": -84.3947865,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-775a10abad70",
+    "name": "Pi Kappa Alpha",
+    "lat": 33.7767159,
+    "lon": -84.3952712,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ba075cb760c2",
+    "name": "Savant Building",
+    "lat": 33.7721425,
+    "lon": -84.3952391,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2d57ebda14da",
+    "name": "Swann Building",
+    "lat": 33.7717842,
+    "lon": -84.3952707,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3efc02ee7327",
+    "name": "L. W. Chapin Building",
+    "lat": 33.7733479,
+    "lon": -84.3951613,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-41c53b842374",
+    "name": "D. M. Smith Building",
+    "lat": 33.7736667,
+    "lon": -84.3951508,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7135f8d30e6f",
+    "name": "John Saylor Coon Building",
+    "lat": 33.7728825,
+    "lon": -84.3958469,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a034ac12452f",
+    "name": "Engineering Science and Mechanics Building",
+    "lat": 33.7720932,
+    "lon": -84.3957959,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d334e83912dd",
+    "name": "Montgomery Knight Building",
+    "lat": 33.7719604,
+    "lon": -84.396016,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2918bdd5e389",
+    "name": "Daniel Guggenheim School of Aerospace Engineering",
+    "lat": 33.7716098,
+    "lon": -84.3957623,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-10d44657bbbc",
+    "name": "Flag Building (Charles A. Smithgall Jr. Building)",
+    "lat": 33.7743958,
+    "lon": -84.3995093,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-25c752dfc6bc",
+    "name": "Technology Enterprise Park",
+    "lat": 33.7697712,
+    "lon": -84.4025045,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ec063fbc757b",
+    "name": "Advanced Wood Products Lab",
+    "lat": 33.7716624,
+    "lon": -84.4014577,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ae8ee8fc56b4",
+    "name": "Joseph B. Whitehead Student Health Center",
+    "lat": 33.7748208,
+    "lon": -84.4030501,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-481375bc6a16",
+    "name": "Whitehead - Pharmacy",
+    "lat": 33.7747288,
+    "lon": -84.4031244,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-31685ec68f4a",
+    "name": "Campus Recreation Parking Deck",
+    "lat": 33.7762385,
+    "lon": -84.4039394,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-80098b741493",
+    "name": "William R. and Jeanette S. Maulding Residence Hall",
+    "lat": 33.7770191,
+    "lon": -84.4056014,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-0c0df69987e8",
+    "name": "Nelson-Shell Residence Hall",
+    "lat": 33.7781906,
+    "lon": -84.4055357,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c685d87a8d77",
+    "name": "Wrek Transmitter & Tower",
+    "lat": 33.778203,
+    "lon": -84.4062386,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-cf46c03bb8fe",
+    "name": "Fulmer Residence Hall",
+    "lat": 33.7786124,
+    "lon": -84.4038704,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-769b303d288d",
+    "name": "Louise M. Fitten Hall",
+    "lat": 33.7782336,
+    "lon": -84.4037022,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-51ac176a1a4b",
+    "name": "Harold E. Montag Residence Hall",
+    "lat": 33.7778258,
+    "lon": -84.4039046,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-553c4e86738f",
+    "name": "Y. Frank Freeman Residence Hall",
+    "lat": 33.7775698,
+    "lon": -84.4039106,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e182b75bfe8f",
+    "name": "Colonel Frank F. Groseclose Building",
+    "lat": 33.7757311,
+    "lon": -84.4017627,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-90e2f52a6468",
+    "name": "ISyE Annex",
+    "lat": 33.7752508,
+    "lon": -84.4016855,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c2f581e375aa",
+    "name": "Instructional Center",
+    "lat": 33.77547,
+    "lon": -84.4012837,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c1d990b850aa",
+    "name": "J. Erskine Love Manufacturing Building",
+    "lat": 33.7766038,
+    "lon": -84.4016684,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-93b207843294",
+    "name": "Fuller E. Callaway Jr. Manufacturing Research Center",
+    "lat": 33.7776273,
+    "lon": -84.4013282,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2708eb46e352",
+    "name": "Manufacturing Related Disciplines Complex",
+    "lat": 33.7769644,
+    "lon": -84.4005417,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-f54c445ce2b8",
+    "name": "Ken Byers Tennis Complex",
+    "lat": 33.7811339,
+    "lon": -84.3941405,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-eefd5f911ff4",
+    "name": "Brock Football Practice Facility",
+    "lat": 33.7789147,
+    "lon": -84.3948502,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-43d95650ae9b",
+    "name": "North Avenue Research Area (NARA)",
+    "lat": 33.7716913,
+    "lon": -84.4059207,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-77cb24684cdd",
+    "name": "Student Competition Center",
+    "lat": 33.7867076,
+    "lon": -84.4062116,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-fc6910d00e31",
+    "name": "Georgia Tech Grants and Contracts",
+    "lat": 33.7816711,
+    "lon": -84.4035932,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a277ce34324a",
+    "name": "Institute of Paper Science and Technology",
+    "lat": 33.7809717,
+    "lon": -84.4046697,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3d0c3e6dd0a1",
+    "name": "John Patrick Crecine Apartments",
+    "lat": 33.7799731,
+    "lon": -84.4035383,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-834233d5f568",
+    "name": "Center Street Apartments",
+    "lat": 33.7802867,
+    "lon": -84.4023658,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-fdf30934fd19",
+    "name": "Center Street Apartments",
+    "lat": 33.7797755,
+    "lon": -84.4017426,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a873545e5dd9",
+    "name": "Georgia Tech Research Institute North Building",
+    "lat": 33.7810018,
+    "lon": -84.4014848,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7aeb7e80fb76",
+    "name": "Georgia Tech Research Institute South Building",
+    "lat": 33.7803555,
+    "lon": -84.4014371,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d19abcfd464b",
+    "name": "Centennial Research Building",
+    "lat": 33.7809729,
+    "lon": -84.4003576,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c241307fc8a8",
+    "name": "Baker Building",
+    "lat": 33.7799604,
+    "lon": -84.3995207,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-057da44cb3df",
+    "name": "Facilities Motor Pool",
+    "lat": 33.7809898,
+    "lon": -84.3972032,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c0c70946656f",
+    "name": "Landscape & Construction",
+    "lat": 33.7807364,
+    "lon": -84.3973413,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b485444b3c26",
+    "name": "Solid Waste & Recycling",
+    "lat": 33.780614,
+    "lon": -84.3975364,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-f84329759d33",
+    "name": "Old Area 2",
+    "lat": 33.7808414,
+    "lon": -84.3971213,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c0ba6758364c",
+    "name": "Facilities Waste Storage",
+    "lat": 33.7810796,
+    "lon": -84.3970115,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a12f514f2187",
+    "name": "President\"s Cottage",
+    "lat": 33.7809854,
+    "lon": -84.3967754,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-1e009c26f462",
+    "name": "Landscape Offices",
+    "lat": 33.7807945,
+    "lon": -84.3969212,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7c2578960fda",
+    "name": "Machine Shop",
+    "lat": 33.780693,
+    "lon": -84.3967371,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d345eac5ac76",
+    "name": "U.A. Whitaker Building",
+    "lat": 33.778403,
+    "lon": -84.3968963,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-95ba01c50810",
+    "name": "Softball Dugout",
+    "lat": 33.7790549,
+    "lon": -84.3932768,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c01987e615f0",
+    "name": "Robert H. Ferst Center for the Arts",
+    "lat": 33.7750852,
+    "lon": -84.3992548,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-987e4f99f2b7",
+    "name": "Bunger-Henry Building",
+    "lat": 33.7755809,
+    "lon": -84.3983901,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-00eabfb7b25d",
+    "name": "Student Center Parking Deck",
+    "lat": 33.7742234,
+    "lon": -84.4006898,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-07f3ec6ecdc8",
+    "name": "Georgia Tech Human Resources Building",
+    "lat": 33.7733941,
+    "lon": -84.4026444,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ee15a3f8659a",
+    "name": "Business Services Building",
+    "lat": 33.7728663,
+    "lon": -84.4015039,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-5d5447fa9a9c",
+    "name": "Printing and Copying Services",
+    "lat": 33.7748024,
+    "lon": -84.4055526,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-42bb4a311b45",
+    "name": "Ivan Allen College of Liberal Arts",
+    "lat": 33.7740627,
+    "lon": -84.4042493,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a51708a29093",
+    "name": "Office of Information Technology Planning and Programming",
+    "lat": 33.7758825,
+    "lon": -84.4063608,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c8570d8e6332",
+    "name": "Walter H. Hopkins Building",
+    "lat": 33.7753545,
+    "lon": -84.4059651,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d012958c9728",
+    "name": "NARA Food Processing Technology Research",
+    "lat": 33.7704722,
+    "lon": -84.4037785,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-8e7dd04482ce",
+    "name": "Zinn Aerospace Combustion Laboratory",
+    "lat": 33.7704843,
+    "lon": -84.4025553,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-fefcb058ec9d",
+    "name": "Tech Way Building",
+    "lat": 33.7709572,
+    "lon": -84.4026246,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-9c9ba4e46e37",
+    "name": "Structural Engineering and Materials Research Lab",
+    "lat": 33.7710573,
+    "lon": -84.4041267,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-9c42b7007f8c",
+    "name": "North Avenue Apartments West",
+    "lat": 33.7706011,
+    "lon": -84.3918375,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-82e457674f36",
+    "name": "North Avenue Apartments Gym",
+    "lat": 33.7700736,
+    "lon": -84.3910258,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-73aa01d1c219",
+    "name": "North Avenue Apartments South",
+    "lat": 33.7693789,
+    "lon": -84.3916931,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b4ef8226af0c",
+    "name": "North Avenue Apartments East",
+    "lat": 33.7694969,
+    "lon": -84.3909848,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-867279e39887",
+    "name": "North Avenue Apartments South Parking Deck",
+    "lat": 33.7688638,
+    "lon": -84.3913883,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-04fddc4d56e1",
+    "name": "Phi Sigma Kappa",
+    "lat": 33.777134,
+    "lon": -84.3919112,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-211f1c763d92",
+    "name": "Boggs Chemistry Building",
+    "lat": 33.7754188,
+    "lon": -84.3996946,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-0b4ff95974b8",
+    "name": "Hampton Inn Atlanta-Georgia Tech Downtown",
+    "lat": 33.7711642,
+    "lon": -84.3957779,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-5523a3b75e1d",
+    "name": "Sonesta Select Atlanta Midtown Georgia Tech",
+    "lat": 33.7854174,
+    "lon": -84.3927454,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b052fd9e2129",
+    "name": "Space Shop Self Storage",
+    "lat": 33.7870835,
+    "lon": -84.3922747,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7eff1debd6a8",
+    "name": "Prima",
+    "lat": 33.7870582,
+    "lon": -84.3935069,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b2a7e4229e8a",
+    "name": "100 Midtown Student Apartments",
+    "lat": 33.7809084,
+    "lon": -84.3903111,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-1b4091e3591c",
+    "name": "Chevron",
+    "lat": 33.7812098,
+    "lon": -84.389487,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-28ad28a01f96",
+    "name": "Chevron",
+    "lat": 33.7810651,
+    "lon": -84.3896033,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e1ead69920da",
+    "name": "Southern Company Gas",
+    "lat": 33.7810116,
+    "lon": -84.3871288,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b25e4053f601",
+    "name": "The Exchange at Tower Square",
+    "lat": 33.7734104,
+    "lon": -84.3865208,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-8bdc2ab1d994",
+    "name": "William Emerson Building",
+    "lat": 33.7731833,
+    "lon": -84.3939088,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-746d9de678ab",
+    "name": "Commander Building",
+    "lat": 33.7788742,
+    "lon": -84.4039447,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-71f16c66bbcf",
+    "name": "Armstrong Residence Hall",
+    "lat": 33.7791466,
+    "lon": -84.4036137,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-bd6311914249",
+    "name": "Hefner Residence Hall",
+    "lat": 33.7791335,
+    "lon": -84.4039482,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-1868120f27dc",
+    "name": "Zelnak Basketball Practice Facility",
+    "lat": 33.7799316,
+    "lon": -84.3922987,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3975e6896fa0",
+    "name": "George W. and Irene K. Woodruff Residence Hall South",
+    "lat": 33.7788438,
+    "lon": -84.4065277,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-0e771ed8932c",
+    "name": "George W. and Irene K. Woodruff Residence Hall North",
+    "lat": 33.7793492,
+    "lon": -84.4065372,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-9082b4e1a471",
+    "name": "CREATE-X",
+    "lat": 33.7791466,
+    "lon": -84.4069254,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7784517b6a9d",
+    "name": "R. Kirk Landon Learning Center",
+    "lat": 33.7823748,
+    "lon": -84.4002941,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4429cd3b70e7",
+    "name": "Barnes & Noble Bookstore @ Georgia Tech",
+    "lat": 33.7763502,
+    "lon": -84.3884042,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-9c9b8c42688a",
+    "name": "Daniel Environmental Engineering Laboratory; Daniel Lab Addition",
+    "lat": 33.773684,
+    "lon": -84.3939878,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-517b9c1dda60",
+    "name": "Georgia Tech Landscaping/Facilities Building",
+    "lat": 33.7798897,
+    "lon": -84.3930682,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-5f0d9c0405e7",
+    "name": "Architecture West",
+    "lat": 33.7760531,
+    "lon": -84.3958835,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-cd334247d760",
+    "name": "Jesse W. Mason Building",
+    "lat": 33.776589,
+    "lon": -84.3986645,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4ac9bc3f43fd",
+    "name": "Campus Recreation Center",
+    "lat": 33.7756678,
+    "lon": -84.4040409,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-14d8f94a7e50",
+    "name": "Ponce Presbyterian Church",
+    "lat": 33.772149,
+    "lon": -84.3820415,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-281c1d378134",
+    "name": "Marq on Ponce",
+    "lat": 33.7729597,
+    "lon": -84.3827007,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b31c8b71b4b8",
+    "name": "Fox Theatre",
+    "lat": 33.7726975,
+    "lon": -84.385531,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d062b657cba8",
+    "name": "The Marquee Club",
+    "lat": 33.7728356,
+    "lon": -84.385112,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-bff8c2f16968",
+    "name": "Ponce Condominium",
+    "lat": 33.7719896,
+    "lon": -84.3846258,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6ec5505160bc",
+    "name": "Hotel Indigo",
+    "lat": 33.7732261,
+    "lon": -84.3845086,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-32e63da01af8",
+    "name": "Home2 Suites by Hilton Atlanta Midtown",
+    "lat": 33.7812273,
+    "lon": -84.3873586,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-78e8061e737d",
+    "name": "Midtown Transit Station",
+    "lat": 33.7810569,
+    "lon": -84.3864854,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6e463e3a9421",
+    "name": "Hyatt Centric Midtown Atlanta",
+    "lat": 33.7814259,
+    "lon": -84.3830093,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-72e6c5bf5cf2",
+    "name": "930 Juniper Street NE Parking",
+    "lat": 33.7801132,
+    "lon": -84.3830699,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-f0ab962d3cb4",
+    "name": "Tenth & Juniper",
+    "lat": 33.7820444,
+    "lon": -84.3822324,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3ded1049d4d3",
+    "name": "999 Peachtree Parking Garage",
+    "lat": 33.7810175,
+    "lon": -84.38311,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3ae70659a0c8",
+    "name": "IKEA",
+    "lat": 33.7889118,
+    "lon": -84.4053108,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c9bbc63a54fb",
+    "name": "Phelan House Apartments",
+    "lat": 33.7805938,
+    "lon": -84.3844073,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-70e62479f2f0",
+    "name": "Palmer House",
+    "lat": 33.780603,
+    "lon": -84.3847375,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-303284edd26c",
+    "name": "Cotting Court Midtown",
+    "lat": 33.7805114,
+    "lon": -84.3853105,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d5e5aa147899",
+    "name": "Commercial Row",
+    "lat": 33.7810485,
+    "lon": -84.3844457,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d42ccde5b79b",
+    "name": "Metropolis Condominium",
+    "lat": 33.7799756,
+    "lon": -84.3838151,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e0e1f73bf2e2",
+    "name": "Margaret Mitchell House",
+    "lat": 33.7813517,
+    "lon": -84.3845897,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-0e4afe91d7dc",
+    "name": "AT&T Peachtree Place",
+    "lat": 33.7811027,
+    "lon": -84.3857391,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-71ffe4a3b2f5",
+    "name": "Peachtree Lofts",
+    "lat": 33.7789378,
+    "lon": -84.3850638,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3be0a9e1e370",
+    "name": "Cornerstone Village Resident Parking",
+    "lat": 33.7765007,
+    "lon": -84.3855326,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4a1ff8558467",
+    "name": "Manor Building",
+    "lat": 33.7771682,
+    "lon": -84.384782,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6cd55e9577ae",
+    "name": "Cornerstone Village Parking",
+    "lat": 33.7768914,
+    "lon": -84.3848863,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-56c025687d20",
+    "name": "Aqua Midtown",
+    "lat": 33.7812342,
+    "lon": -84.3881436,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-af7502d3ff90",
+    "name": "Renaissance Atlanta Midtown Hotel",
+    "lat": 33.7783296,
+    "lon": -84.387858,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e15624174d73",
+    "name": "Prime On Peachtree",
+    "lat": 33.7827138,
+    "lon": -84.383626,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-f1ab449881c4",
+    "name": "1023 Juniper",
+    "lat": 33.7826067,
+    "lon": -84.3821351,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-879c0144dadb",
+    "name": "Prime Cigar Bar",
+    "lat": 33.7828407,
+    "lon": -84.383573,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-310daf7e351e",
+    "name": "1075 Peachtree",
+    "lat": 33.7836912,
+    "lon": -84.3828444,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-be4a18ade2a8",
+    "name": "Loews Atlanta Hotel",
+    "lat": 33.7832119,
+    "lon": -84.3833329,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-efd19a9e7905",
+    "name": "Circa 730",
+    "lat": 33.7744386,
+    "lon": -84.3851358,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b8244658be11",
+    "name": "Crest On Peachtree Building Parking",
+    "lat": 33.7741756,
+    "lon": -84.3857875,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-aae37054f187",
+    "name": "Crest On Peachtree",
+    "lat": 33.7740987,
+    "lon": -84.3854535,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-0eb2fc4c3479",
+    "name": "Midtown Center",
+    "lat": 33.7752361,
+    "lon": -84.3851807,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b75e0166eaea",
+    "name": "Circa 730 Building Parking",
+    "lat": 33.7744638,
+    "lon": -84.3856783,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d04d80814d0c",
+    "name": "715 Peachtree",
+    "lat": 33.7740864,
+    "lon": -84.3841208,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4978477e39d9",
+    "name": "Lutheran Towers",
+    "lat": 33.7745858,
+    "lon": -84.3828272,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ee80992dd31f",
+    "name": "Windsor Over Peachtree",
+    "lat": 33.7716259,
+    "lon": -84.3856767,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-731206998604",
+    "name": "Windsor Resident/Customer Parking",
+    "lat": 33.7720096,
+    "lon": -84.3859354,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-da3cc8d7f8fe",
+    "name": "North Avenue Train Station",
+    "lat": 33.7716841,
+    "lon": -84.3870581,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-87b32616a9db",
+    "name": "Station Eleven",
+    "lat": 33.771663,
+    "lon": -84.3864566,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-449c755f855f",
+    "name": "Georgia Center - Hotel and Center Parking",
+    "lat": 33.7703272,
+    "lon": -84.3892558,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-19195fd736f6",
+    "name": "Center for the Visually Impaired",
+    "lat": 33.7749028,
+    "lon": -84.3869973,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a60070a105c4",
+    "name": "North Avenue Bus Platform",
+    "lat": 33.7718728,
+    "lon": -84.3867774,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-97e656a2c694",
+    "name": "The Varsity Parking Deck",
+    "lat": 33.7720996,
+    "lon": -84.3895017,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6931383d88e8",
+    "name": "Concentra Urgent Care",
+    "lat": 33.7734633,
+    "lon": -84.3890656,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-cdcf580a4e74",
+    "name": "Aroma Midtown",
+    "lat": 33.7737734,
+    "lon": -84.3894844,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-8bb2a9199e12",
+    "name": "Anderson's Olympic Torch Tower",
+    "lat": 33.7737074,
+    "lon": -84.3897358,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2858e1e35cb4",
+    "name": "MARTA - Midtown Transit Station Entrance - Northbound",
+    "lat": 33.7816099,
+    "lon": -84.3862196,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-99015987e0c3",
+    "name": "Turner Construction",
+    "lat": 33.7834056,
+    "lon": -84.3889077,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-72d6c71beacb",
+    "name": "MARTA - Midtown Transit Station Entrance - Southbound",
+    "lat": 33.7816168,
+    "lon": -84.3865155,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3d4365994697",
+    "name": "10 10th",
+    "lat": 33.7817754,
+    "lon": -84.3870186,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4763b751cb31",
+    "name": "Residence Inn Atlanta Midtown/Georgia Tech",
+    "lat": 33.7829985,
+    "lon": -84.387471,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-467d1bc0f598",
+    "name": "Wells Fargo ATM",
+    "lat": 33.779681,
+    "lon": -84.3831144,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-507dd965b482",
+    "name": "All Saints Episcopal Church",
+    "lat": 33.7715647,
+    "lon": -84.3878725,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a7116e3bc04a",
+    "name": "Promenade Central",
+    "lat": 33.7876941,
+    "lon": -84.3841944,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-87735294ccb9",
+    "name": "First Church of Christ Scientist",
+    "lat": 33.7888495,
+    "lon": -84.3835495,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6b29ccf433d2",
+    "name": "Boys & Girls Clubs of America - National Headquarters",
+    "lat": 33.7894961,
+    "lon": -84.3837542,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-90a3a30f7b73",
+    "name": "Christian Science Reading Room",
+    "lat": 33.7889487,
+    "lon": -84.3832057,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2a65783563fe",
+    "name": "The Ansley Terrace",
+    "lat": 33.7881926,
+    "lon": -84.3818366,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a29a71051d12",
+    "name": "The Castle",
+    "lat": 33.7880352,
+    "lon": -84.3846953,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2161900a832a",
+    "name": "Promenade Tower",
+    "lat": 33.7878319,
+    "lon": -84.3851833,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-172cd53ff2d7",
+    "name": "SCAD House",
+    "lat": 33.7885308,
+    "lon": -84.3859209,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6e3a65625a87",
+    "name": "MARTA Arts Center Station",
+    "lat": 33.7892289,
+    "lon": -84.3869108,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ea88f58bcdfe",
+    "name": "One Atlantic Center Parking",
+    "lat": 33.7871901,
+    "lon": -84.3885856,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-22dd49e16328",
+    "name": "Williams Street Productions, LLC.",
+    "lat": 33.7836613,
+    "lon": -84.3902758,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-03100acc8328",
+    "name": "A1 House",
+    "lat": 33.7846037,
+    "lon": -84.3979462,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-947e220ec658",
+    "name": "Atlanta Christian Church",
+    "lat": 33.7846853,
+    "lon": -84.3984819,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-cf2737b00414",
+    "name": "1100 Spring Street",
+    "lat": 33.7846967,
+    "lon": -84.3896663,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-0479218c0f6f",
+    "name": "Dean's Midtown",
+    "lat": 33.7869668,
+    "lon": -84.3896737,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d70e4405e10e",
+    "name": "Ticket Alternative",
+    "lat": 33.7875449,
+    "lon": -84.3895932,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-025f07157892",
+    "name": "Francis XIV",
+    "lat": 33.7865706,
+    "lon": -84.3964661,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-961cc352f328",
+    "name": "Spring Street Trolley Line Substation",
+    "lat": 33.7851674,
+    "lon": -84.389465,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a823eb05504f",
+    "name": "10 10th Parking Garage",
+    "lat": 33.7822003,
+    "lon": -84.3871002,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2aca85e29460",
+    "name": "Seven Midtown",
+    "lat": 33.7846542,
+    "lon": -84.3846095,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ebc031b7c3ae",
+    "name": "My Sister's Room",
+    "lat": 33.7848029,
+    "lon": -84.3846268,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-931c87156343",
+    "name": "Lure Saltwater Kitchen & Bar",
+    "lat": 33.7849659,
+    "lon": -84.3845956,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2e74808d292a",
+    "name": "Pasta Da Pulcinella",
+    "lat": 33.7848533,
+    "lon": -84.3881402,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-1fa6d6e821dc",
+    "name": "The Hype",
+    "lat": 33.785679,
+    "lon": -84.3845907,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3e0590b7da0a",
+    "name": "South City Kitchen",
+    "lat": 33.7859389,
+    "lon": -84.384503,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-bee19c7b659e",
+    "name": "The Proscenium",
+    "lat": 33.7862593,
+    "lon": -84.3836432,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-fab14d296987",
+    "name": "The Proscenium Parking Deck",
+    "lat": 33.7861872,
+    "lon": -84.3846846,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-707821e7aae2",
+    "name": "Regions Plaza",
+    "lat": 33.7869218,
+    "lon": -84.3883112,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-cff7a24bd17b",
+    "name": "The Campanile",
+    "lat": 33.7859588,
+    "lon": -84.382569,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-74e33b54c0f6",
+    "name": "Atlanta Marriott Suites Midtown",
+    "lat": 33.7862215,
+    "lon": -84.3864486,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-562141160c88",
+    "name": "Four Seasons Hotel",
+    "lat": 33.7860164,
+    "lon": -84.3853027,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6b3eda2cc487",
+    "name": "Dentistry for Midtown",
+    "lat": 33.7785753,
+    "lon": -84.3824663,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-f9c356d87c51",
+    "name": "Steamhouse Lounge",
+    "lat": 33.7833888,
+    "lon": -84.3874736,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-65258dd8f672",
+    "name": "The Children's Campus at Alston & Bird",
+    "lat": 33.7838519,
+    "lon": -84.3874887,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6b395e3771c8",
+    "name": "Starbucks",
+    "lat": 33.786283,
+    "lon": -84.3871775,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-790b3bcd64ce",
+    "name": "Live Well Chiropractic",
+    "lat": 33.7828784,
+    "lon": -84.3821489,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7d3cc05678b8",
+    "name": "Electric Saturation",
+    "lat": 33.7822164,
+    "lon": -84.3865506,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-8fe6182d7c53",
+    "name": "The Pirate House",
+    "lat": 33.7846076,
+    "lon": -84.3996809,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-f2f9063e5af8",
+    "name": "Chick-fil-A",
+    "lat": 33.7847628,
+    "lon": -84.407983,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-bdd1c439bf2f",
+    "name": "Cook Out",
+    "lat": 33.7852839,
+    "lon": -84.4078325,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-0695c0dbf50a",
+    "name": "Burger King",
+    "lat": 33.7853411,
+    "lon": -84.4071101,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3bdda2d0b253",
+    "name": "Al-Farooq Masjid of Atlanta",
+    "lat": 33.7857678,
+    "lon": -84.4015756,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2a9876b8fd92",
+    "name": "Tenth Street Underwood Memorial United Methodist Church",
+    "lat": 33.7818387,
+    "lon": -84.400938,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4aa9a996fd92",
+    "name": "WANF/WPCH - Atlanta News First",
+    "lat": 33.7868359,
+    "lon": -84.4004571,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-0329455c4176",
+    "name": "Krystal",
+    "lat": 33.7858363,
+    "lon": -84.407833,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2d399999f0c4",
+    "name": "Tokyo Valentino",
+    "lat": 33.7780293,
+    "lon": -84.4077201,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-61c45afa220c",
+    "name": "Arc / RIOT Color",
+    "lat": 33.7811829,
+    "lon": -84.4085771,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2334ab28373c",
+    "name": "Wells Fargo",
+    "lat": 33.7725529,
+    "lon": -84.3984266,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-76fc35664af0",
+    "name": "Baltimore Block",
+    "lat": 33.7685626,
+    "lon": -84.3884149,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-748185aec233",
+    "name": "Linden Medical Center",
+    "lat": 33.7695699,
+    "lon": -84.3832338,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7a241747cc25",
+    "name": "FASTSIGNS® of Atlanta",
+    "lat": 33.7710219,
+    "lon": -84.3828339,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-8db27d31c450",
+    "name": "Poor Calvin's",
+    "lat": 33.7685371,
+    "lon": -84.3822518,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-0d73a48607e4",
+    "name": "Rufus M. Rose House",
+    "lat": 33.7691922,
+    "lon": -84.3849328,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4aa4ce3f3298",
+    "name": "The Byron on Peachtree",
+    "lat": 33.7695392,
+    "lon": -84.3847126,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-501bfb708a0d",
+    "name": "Law & Moran, Attorneys At Law",
+    "lat": 33.7699594,
+    "lon": -84.3885229,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-064f77e69ee3",
+    "name": "Civic Center Post Office",
+    "lat": 33.7701944,
+    "lon": -84.3824983,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-8b6e40a42744",
+    "name": "Gerber Collision & Glass",
+    "lat": 33.7706719,
+    "lon": -84.3827433,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-0041f450edd8",
+    "name": "Emory Proton Therapy Center",
+    "lat": 33.7718231,
+    "lon": -84.384101,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-abf5b85ececc",
+    "name": "691 Juniper",
+    "lat": 33.7734545,
+    "lon": -84.3829406,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-1e4a13eb1bd9",
+    "name": "Premier Academy - Renaissance Child Development Center",
+    "lat": 33.7690076,
+    "lon": -84.3836475,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-afb75852aecc",
+    "name": "715 Peachtree Street NE Parking",
+    "lat": 33.7739652,
+    "lon": -84.383509,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7a5910834600",
+    "name": "Community Friendship Incorporated",
+    "lat": 33.7685194,
+    "lon": -84.3845845,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-946dbe427f42",
+    "name": "All Saints' Church Parking Lot and Deck",
+    "lat": 33.7721504,
+    "lon": -84.3883809,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c00c7deaf4a9",
+    "name": "Peasant Building",
+    "lat": 33.7679263,
+    "lon": -84.3847578,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-caef8e4bc770",
+    "name": "BP",
+    "lat": 33.7727325,
+    "lon": -84.3820948,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ac18b29b44ad",
+    "name": "Ponce Condominium Parking",
+    "lat": 33.7721285,
+    "lon": -84.3842737,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6f2c737627bd",
+    "name": "Ascensa Health at St. Jude's Recovery Center - Men's Residential Treatment",
+    "lat": 33.7684876,
+    "lon": -84.3842795,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c0a94200b472",
+    "name": "Bank of America Plaza ATM",
+    "lat": 33.771176,
+    "lon": -84.3871057,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ea429fbda33d",
+    "name": "GX Market",
+    "lat": 33.7696381,
+    "lon": -84.4051149,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-bb210c3d20d2",
+    "name": "Antioch Baptist Church North",
+    "lat": 33.7679025,
+    "lon": -84.4054405,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e1f5ee3f6031",
+    "name": "Grace Midtown Church Sanctuary",
+    "lat": 33.7711704,
+    "lon": -84.4078544,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2f562d481f77",
+    "name": "Lily of the Valley Baptist Church",
+    "lat": 33.7679804,
+    "lon": -84.4069271,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-8fb0d2c89466",
+    "name": "Airgas",
+    "lat": 33.7709782,
+    "lon": -84.4063861,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-cd5d27e48e4b",
+    "name": "Grace Midtown Church Old Auditorium",
+    "lat": 33.7715169,
+    "lon": -84.4080941,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c75279358210",
+    "name": "Public Storage",
+    "lat": 33.7737653,
+    "lon": -84.4084874,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-f4368c73299d",
+    "name": "Capital Assets Accounting Staging",
+    "lat": 33.7737214,
+    "lon": -84.4034709,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4362be96f78c",
+    "name": "Adult Rehabilitation Center",
+    "lat": 33.7725257,
+    "lon": -84.402715,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ae987680a6d6",
+    "name": "Kpoppia",
+    "lat": 33.7730325,
+    "lon": -84.4034483,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4573955a5c5e",
+    "name": "Solar Charging Station",
+    "lat": 33.7763604,
+    "lon": -84.4011154,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-01034fc08eae",
+    "name": "Delia's Chicken Sausage Stand",
+    "lat": 33.776502,
+    "lon": -84.4073084,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-deab7e4f1c2c",
+    "name": "Environmental Science, Health, and Safety",
+    "lat": 33.7744109,
+    "lon": -84.404686,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-9ab280f8be3a",
+    "name": "Midtown Village Atlanta",
+    "lat": 33.7678165,
+    "lon": -84.3830892,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-efc2376e0e0a",
+    "name": "W. W. Orr Building",
+    "lat": 33.7676594,
+    "lon": -84.3857657,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d54e30fef504",
+    "name": "Peachtree Walk Resident and Guest Parking",
+    "lat": 33.7841048,
+    "lon": -84.3858314,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b14d7317ad68",
+    "name": "Peachtree Walk Resident and Guest Parking",
+    "lat": 33.7840153,
+    "lon": -84.3867026,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6bb8e18fcee7",
+    "name": "Shell",
+    "lat": 33.7858669,
+    "lon": -84.407127,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6a125ad09af0",
+    "name": "GT Leadership Challenge Course Pavilion",
+    "lat": 33.7784204,
+    "lon": -84.4022874,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-0b916a2165a2",
+    "name": "Tower 3",
+    "lat": 33.7786152,
+    "lon": -84.4018855,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-495ce15b2297",
+    "name": "Tower 2",
+    "lat": 33.7784068,
+    "lon": -84.4016858,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-61d76206424a",
+    "name": "Tower 1",
+    "lat": 33.7782452,
+    "lon": -84.40194,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-36dbe790d487",
+    "name": "ORGT Storage",
+    "lat": 33.776034,
+    "lon": -84.4050104,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ea4e033fe4e2",
+    "name": "ORGT Storage",
+    "lat": 33.7759404,
+    "lon": -84.4050802,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-acc3ebbd4f2d",
+    "name": "Emory University Medical Office Tower Parking",
+    "lat": 33.7678615,
+    "lon": -84.3869032,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b21e2ccdb9ac",
+    "name": "Davis-Fischer Building",
+    "lat": 33.7694786,
+    "lon": -84.3863393,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-68adbb068aeb",
+    "name": "33 Ponce Loft Condominiums",
+    "lat": 33.7720619,
+    "lon": -84.3864065,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b11789135bd6",
+    "name": "SkyHouse South",
+    "lat": 33.7775097,
+    "lon": -84.383247,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b0f781d4e82d",
+    "name": "Glenn-Towers Connector",
+    "lat": 33.7737688,
+    "lon": -84.3912981,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-86f38a99882e",
+    "name": "Trace Midtown",
+    "lat": 33.7758815,
+    "lon": -84.3851694,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-adf2ecdf21ac",
+    "name": "Whole Foods Market",
+    "lat": 33.7860916,
+    "lon": -84.3884518,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-257789a1e803",
+    "name": "Atlantic House",
+    "lat": 33.7860339,
+    "lon": -84.3872702,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-5ef9f61b8dbc",
+    "name": "Northside Medical Midtown",
+    "lat": 33.7853704,
+    "lon": -84.3884106,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7ad1a9c4e851",
+    "name": "Hanover Midtown",
+    "lat": 33.7880443,
+    "lon": -84.3881641,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-937a9de75afd",
+    "name": "Regions Plaza Garage",
+    "lat": 33.7880201,
+    "lon": -84.3888352,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-f8e7a33402a4",
+    "name": "West Village Dining Commons",
+    "lat": 33.7791488,
+    "lon": -84.4044639,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-8763210d7804",
+    "name": "West Village Dining Commons",
+    "lat": 33.7793188,
+    "lon": -84.4048783,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-30eb75effc73",
+    "name": "ViewPoint",
+    "lat": 33.7777737,
+    "lon": -84.3839795,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ef9d596064b5",
+    "name": "One Coca-Cola Plaza",
+    "lat": 33.7708972,
+    "lon": -84.3966151,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4ce3e7e3b95b",
+    "name": "Coca-Cola USA Building",
+    "lat": 33.7701038,
+    "lon": -84.3979028,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-f087e557beb1",
+    "name": "1280 West",
+    "lat": 33.7895664,
+    "lon": -84.3885916,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-9ea87c7222e0",
+    "name": "Arts Center Tower",
+    "lat": 33.7892661,
+    "lon": -84.3881996,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-aedd62435489",
+    "name": "100 Colony Square",
+    "lat": 33.7868482,
+    "lon": -84.3828103,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4423721656c4",
+    "name": "400 Colony Square",
+    "lat": 33.7875718,
+    "lon": -84.3830809,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-40eb47693413",
+    "name": "Colony House",
+    "lat": 33.7880512,
+    "lon": -84.3824535,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2283ea0dd219",
+    "name": "Spire",
+    "lat": 33.7783124,
+    "lon": -84.3852386,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-bbea33122190",
+    "name": "Square on 5th",
+    "lat": 33.7779672,
+    "lon": -84.3892581,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c79c992ffffd",
+    "name": "MAA Midtown",
+    "lat": 33.7827164,
+    "lon": -84.3867016,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-46c845daa797",
+    "name": "77 12th Street",
+    "lat": 33.784229,
+    "lon": -84.3848638,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-bc4917396240",
+    "name": "Seventh Midtown",
+    "lat": 33.7783515,
+    "lon": -84.3839881,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-886b23bf9158",
+    "name": "The M By Radius",
+    "lat": 33.7846052,
+    "lon": -84.3883222,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2f72901eff31",
+    "name": "The Reynolds",
+    "lat": 33.770133,
+    "lon": -84.384717,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-45c146161774",
+    "name": "Turner Broadcasting System",
+    "lat": 33.7818738,
+    "lon": -84.3933722,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d48790d080a3",
+    "name": "Axis Midtown",
+    "lat": 33.7768433,
+    "lon": -84.3825544,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-fafa4a29dae1",
+    "name": "Rodger A. and Helen B. Krone Engineered Biosystems Building",
+    "lat": 33.7808326,
+    "lon": -84.3984286,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e54fda078f05",
+    "name": "Steelworks Parking Deck",
+    "lat": 33.7881899,
+    "lon": -84.4008978,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ac98625adb8f",
+    "name": "Steelworks",
+    "lat": 33.7880631,
+    "lon": -84.400655,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-938d00423bc4",
+    "name": "Atlanta Event Center",
+    "lat": 33.7858131,
+    "lon": -84.3839433,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c7996129ecca",
+    "name": "Exxon",
+    "lat": 33.7698883,
+    "lon": -84.4050289,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a35335775d91",
+    "name": "Turner Broadcasting System",
+    "lat": 33.7830144,
+    "lon": -84.3932071,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-76ca49698b0f",
+    "name": "Turner Studios",
+    "lat": 33.7822724,
+    "lon": -84.3940183,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b99e8bdba900",
+    "name": "TBS",
+    "lat": 33.7824218,
+    "lon": -84.3935929,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-373cce2b1bcb",
+    "name": "TBS",
+    "lat": 33.7831253,
+    "lon": -84.3940134,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e9411c817b47",
+    "name": "Tower 4",
+    "lat": 33.7789908,
+    "lon": -84.4022512,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-1248220102a0",
+    "name": "CODA",
+    "lat": 33.7755067,
+    "lon": -84.3878882,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b4ec014162bd",
+    "name": "Georgia Tech Police",
+    "lat": 33.7812118,
+    "lon": -84.4034356,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4b8f39e8d827",
+    "name": "CRC Competative Sports Storage",
+    "lat": 33.7761964,
+    "lon": -84.4052353,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-9393f876f15c",
+    "name": "The Standard",
+    "lat": 33.7746431,
+    "lon": -84.3891795,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b3fa787ea4b7",
+    "name": "Alexan on 8th",
+    "lat": 33.7791877,
+    "lon": -84.3877505,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-402e118fca17",
+    "name": "Nine15 Midtown",
+    "lat": 33.7797333,
+    "lon": -84.3867349,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6b170dfcc239",
+    "name": "High Performance Computing Center",
+    "lat": 33.7757249,
+    "lon": -84.3879863,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-98ea7f227a08",
+    "name": "Modera Midtown",
+    "lat": 33.779963,
+    "lon": -84.3900721,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-06c692f0871b",
+    "name": "Hanover Midtown",
+    "lat": 33.7787593,
+    "lon": -84.3834286,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-182752d2053a",
+    "name": "Sixty11th",
+    "lat": 33.7835663,
+    "lon": -84.3852119,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-677fb062d422",
+    "name": "Exhibition Hall",
+    "lat": 33.7746388,
+    "lon": -84.4017066,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a82579dc7dde",
+    "name": "Extra Space Storage",
+    "lat": 33.7892761,
+    "lon": -84.4070907,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-55d7dd5559b0",
+    "name": "Hampton Inn & Suites Atlanta Midtown",
+    "lat": 33.7883056,
+    "lon": -84.3874636,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a3eb1991ea25",
+    "name": "The Wimbish House",
+    "lat": 33.7858302,
+    "lon": -84.3834671,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7c01beec6b38",
+    "name": "Promenade Parking Deck",
+    "lat": 33.7878083,
+    "lon": -84.3862067,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-7a25f5abfdb4",
+    "name": "Midtown Green Building",
+    "lat": 33.7870543,
+    "lon": -84.3864132,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-aa99eb269acd",
+    "name": "1180 Peachtree",
+    "lat": 33.7868468,
+    "lon": -84.3843545,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-552c060d0dad",
+    "name": "Amli Arts Center Apartments",
+    "lat": 33.7887495,
+    "lon": -84.3885178,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-aaf310b558e7",
+    "name": "Veranda",
+    "lat": 33.7858324,
+    "lon": -84.3845596,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-17c282d50afe",
+    "name": "University House Apartments",
+    "lat": 33.7800007,
+    "lon": -84.3893271,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-eff24ea4dfea",
+    "name": "Biltmore Innovation Center",
+    "lat": 33.7767327,
+    "lon": -84.3867881,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e31bdae32a22",
+    "name": "999 Peachtree",
+    "lat": 33.7811006,
+    "lon": -84.3837135,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-0ed24daa8942",
+    "name": "J5",
+    "lat": 33.7755032,
+    "lon": -84.3825531,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e6ad08e726bd",
+    "name": "AT&T Midtown Center II",
+    "lat": 33.7744963,
+    "lon": -84.3865381,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a08473e8aeca",
+    "name": "Lilli Midtown",
+    "lat": 33.7734762,
+    "lon": -84.3844665,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2e2a335b2497",
+    "name": "The Georgian Terrace Hotel",
+    "lat": 33.7727608,
+    "lon": -84.3844098,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-05d9aa70afe0",
+    "name": "Agnes Raoul Glenn Building",
+    "lat": 33.7678871,
+    "lon": -84.3864957,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c91a2bae7aab",
+    "name": "Peachtree Building",
+    "lat": 33.7693098,
+    "lon": -84.3858255,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-87efb3a7550c",
+    "name": "Winship Cancer Institute at Emory Midtown",
+    "lat": 33.770136,
+    "lon": -84.3860099,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d81a56fbb0c2",
+    "name": "Emory University Hospital Midtown",
+    "lat": 33.7686122,
+    "lon": -84.3863591,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-17d232439dd5",
+    "name": "131 Ponce Apartments",
+    "lat": 33.7719123,
+    "lon": -84.3826894,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-497f2ffbb4b3",
+    "name": "Paloma West Midtown (building 2)",
+    "lat": 33.773941,
+    "lon": -84.4058638,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3c6460bf60f7",
+    "name": "Paloma West Midtown (Building 1)",
+    "lat": 33.7744185,
+    "lon": -84.4067963,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-5cb521dd51ce",
+    "name": "Carbon Neutral Energy Solutions Lab",
+    "lat": 33.7709815,
+    "lon": -84.4019242,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4e93cd8485f2",
+    "name": "The Mark Atlanta",
+    "lat": 33.7810584,
+    "lon": -84.3887485,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-85a007f6c299",
+    "name": "Alpha Phi",
+    "lat": 33.7741794,
+    "lon": -84.3927265,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-f0269f2f2137",
+    "name": "Waffle House",
+    "lat": 33.7846356,
+    "lon": -84.4070931,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6833130b4b42",
+    "name": "The Pavilion",
+    "lat": 33.774839,
+    "lon": -84.4010078,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-149ba6048703",
+    "name": "The Pavilion",
+    "lat": 33.7748011,
+    "lon": -84.4005191,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-27c258aace91",
+    "name": "Jimmy John's",
+    "lat": 33.7750844,
+    "lon": -84.4004804,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-65729c2c49fa",
+    "name": "Kappa Alpha Theta",
+    "lat": 33.7771506,
+    "lon": -84.3916295,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-bde646565eb9",
+    "name": "Kendeda Building for Innovative Sustainable Design",
+    "lat": 33.7787729,
+    "lon": -84.3994961,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-d83a230088da",
+    "name": "Dalney Street Office Building",
+    "lat": 33.7797155,
+    "lon": -84.4005572,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e05c2c271905",
+    "name": "Dalney Street Parking Deck",
+    "lat": 33.7799713,
+    "lon": -84.400534,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c8cc8195c4ff",
+    "name": "712 West Peachtree",
+    "lat": 33.7741985,
+    "lon": -84.3876661,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-9eeb1e1e668a",
+    "name": "Elevance Health Technology Center",
+    "lat": 33.7748177,
+    "lon": -84.3877335,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-fe5223db1240",
+    "name": "The Connector Apartments",
+    "lat": 33.7735807,
+    "lon": -84.3883795,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-10e787e435a8",
+    "name": "1105 West Peachtree",
+    "lat": 33.7850846,
+    "lon": -84.387277,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-088d89d77db7",
+    "name": "BP",
+    "lat": 33.7707029,
+    "lon": -84.3893976,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-de384734a5c8",
+    "name": "Emory University Hospital Midtown Staff Parking",
+    "lat": 33.7693156,
+    "lon": -84.3880255,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4125f02b29a4",
+    "name": "Extra Space Storage",
+    "lat": 33.7891258,
+    "lon": -84.3927953,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-f3c4202375b5",
+    "name": "The Rive Atlanta",
+    "lat": 33.7839681,
+    "lon": -84.4083616,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-72631039f205",
+    "name": "QuikTrip",
+    "lat": 33.7810855,
+    "lon": -84.4080965,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ce205ab7260f",
+    "name": "Inspire Atlanta 1",
+    "lat": 33.7704989,
+    "lon": -84.3940126,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-31ffdf73cc92",
+    "name": "Inspire Atlanta 2",
+    "lat": 33.7705132,
+    "lon": -84.3933716,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3335690ac4d3",
+    "name": "Inspire Atlanta 3",
+    "lat": 33.7701402,
+    "lon": -84.3940619,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-f03ff8a80ad3",
+    "name": "Veteran's Resource Center",
+    "lat": 33.7794612,
+    "lon": -84.3962439,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2fc9d371ac26",
+    "name": "Dunkin'",
+    "lat": 33.7751244,
+    "lon": -84.4006165,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-5c4f349e6fc4",
+    "name": "Reck Garage",
+    "lat": 33.7734808,
+    "lon": -84.3979796,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-cba80f1314c4",
+    "name": "903 Peachtree",
+    "lat": 33.7792368,
+    "lon": -84.3837309,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-fa2487f8cedd",
+    "name": "Hub Atlanta",
+    "lat": 33.7807193,
+    "lon": -84.3896905,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-05a52bd2dc0a",
+    "name": "the Rive Spring St",
+    "lat": 33.7782415,
+    "lon": -84.3883195,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-bde0f783a27a",
+    "name": "500 Colony Square",
+    "lat": 33.7881581,
+    "lon": -84.3831807,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6fd80b09b384",
+    "name": "Sonder Midtown South",
+    "lat": 33.7690185,
+    "lon": -84.3830877,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e232e494a8b8",
+    "name": "505 Courtland",
+    "lat": 33.7683797,
+    "lon": -84.38363,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-9b639beb6096",
+    "name": "Momentum Midtown",
+    "lat": 33.7826982,
+    "lon": -84.3883746,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c887e9c6f0fc",
+    "name": "Ten Twenty Spring",
+    "lat": 33.782726,
+    "lon": -84.3902226,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-dc09dd8752da",
+    "name": "The Juniper",
+    "lat": 33.7836969,
+    "lon": -84.3819861,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-8127dc1d3586",
+    "name": "Society Atlanta",
+    "lat": 33.7770738,
+    "lon": -84.3839475,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-42d44940a2fb",
+    "name": "Rambler Atlanta",
+    "lat": 33.774811,
+    "lon": -84.3855541,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-02663936f317",
+    "name": "Sora at Spring Quarter",
+    "lat": 33.7818785,
+    "lon": -84.38964,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-847c219f1ce4",
+    "name": "North Avenue Presbyterian Church Parking",
+    "lat": 33.7706451,
+    "lon": -84.3844069,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e5aca8f12f45",
+    "name": "Set The Stage",
+    "lat": 33.7693719,
+    "lon": -84.3844504,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-986ea640a188",
+    "name": "Caduceus USA",
+    "lat": 33.7697109,
+    "lon": -84.3849372,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-9165d748434d",
+    "name": "Charity Hamidullah & Nicole King Ahn - Artists In Residence",
+    "lat": 33.768025,
+    "lon": -84.3850725,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e4c8c5c75d72",
+    "name": "Atlanta Shakespeare Academy",
+    "lat": 33.7681352,
+    "lon": -84.3850967,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4c20c5a599dc",
+    "name": "Shakespeare Tavern",
+    "lat": 33.7682459,
+    "lon": -84.3849395,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-f00c169822a8",
+    "name": "Science Square Labs",
+    "lat": 33.7698173,
+    "lon": -84.4012328,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-2111cf512b1c",
+    "name": "The Grace Residences",
+    "lat": 33.7691872,
+    "lon": -84.4017191,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c5ae01d9f4a3",
+    "name": "One Georgia Center Parking",
+    "lat": 33.7707543,
+    "lon": -84.3884795,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-29cef9e12c9e",
+    "name": "Ascensa Health at St. Jude's Recovery Center",
+    "lat": 33.7678126,
+    "lon": -84.3822425,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-1deebf897df3",
+    "name": "Covenant Community, Inc.",
+    "lat": 33.7717535,
+    "lon": -84.3887057,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ece0b81dcf82",
+    "name": "Midtown Assistance Center",
+    "lat": 33.771501,
+    "lon": -84.3886798,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-85e78ad433df",
+    "name": "Recovery Resources of Atlanta, Inc.",
+    "lat": 33.7715962,
+    "lon": -84.3883796,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ce67b9b05afe",
+    "name": "SouthState Bank ATM",
+    "lat": 33.7747552,
+    "lon": -84.388009,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-5ddac4fd45b8",
+    "name": "The Local on 14th",
+    "lat": 33.7867982,
+    "lon": -84.4020869,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-9ffb0827cff3",
+    "name": "George Tower | Scheller Tower",
+    "lat": 33.7772982,
+    "lon": -84.3881826,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-367d93300ad0",
+    "name": "300 Colony Square",
+    "lat": 33.787222,
+    "lon": -84.3821627,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6165bbac8475",
+    "name": "Kidtown",
+    "lat": 33.7714578,
+    "lon": -84.4076936,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-cba2ae371305",
+    "name": "Grace Midtown Church Pavilion",
+    "lat": 33.7714858,
+    "lon": -84.4079083,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ef97a7fcc58a",
+    "name": "1010 Midtown",
+    "lat": 33.7837243,
+    "lon": -84.3838613,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-21d93a4e9ddb",
+    "name": "Kinetic",
+    "lat": 33.7826238,
+    "lon": -84.3888311,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-4be27cbc7a99",
+    "name": "NCR Parking",
+    "lat": 33.7784192,
+    "lon": -84.3893919,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-fcef4c45e522",
+    "name": "Delta Sigma Phi",
+    "lat": 33.7758636,
+    "lon": -84.3925561,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-099f31c2677b",
+    "name": "William Vernon Skiles Building",
+    "lat": 33.7735977,
+    "lon": -84.3961799,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-748cb13a420d",
+    "name": "Tuscany - Palazzo Centro",
+    "lat": 33.7806626,
+    "lon": -84.3821811,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-a22c2705380d",
+    "name": "Tuscany - Palazzo Bocce",
+    "lat": 33.7799241,
+    "lon": -84.3821787,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-71931627d4d5",
+    "name": "Tuscany - Palazzo Dolce",
+    "lat": 33.7812316,
+    "lon": -84.3820771,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ed7c1467783a",
+    "name": "Dorothy Murray Crosland Tower",
+    "lat": 33.7742173,
+    "lon": -84.3951816,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-722903583ec6",
+    "name": "John Lewis Student Center",
+    "lat": 33.7739825,
+    "lon": -84.398552,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-b8537e981fcb",
+    "name": "G. Wayne Clough Undergraduate Learning Commons",
+    "lat": 33.7746593,
+    "lon": -84.3964738,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-ce5a4681c53f",
+    "name": "Howey Building",
+    "lat": 33.7774192,
+    "lon": -84.3986744,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e43a921d05a7",
+    "name": "Howey Building",
+    "lat": 33.7774227,
+    "lon": -84.3980502,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-da324b2b54b7",
+    "name": "Weber Space Science & Technology Building III",
+    "lat": 33.7727051,
+    "lon": -84.396388,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-678a6e92f705",
+    "name": "Weber Space Science and Technology Building I",
+    "lat": 33.7729843,
+    "lon": -84.3967065,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-3dc90dab54f5",
+    "name": "Price Gilbert Memorial Library",
+    "lat": 33.7742914,
+    "lon": -84.3956206,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-571c846ece3a",
+    "name": "Jack C. Stein and Goldin Houses",
+    "lat": 33.7752853,
+    "lon": -84.3915943,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-473feeccf8b6",
+    "name": "Kenneth Gordon Matheson Residence Hall",
+    "lat": 33.7745363,
+    "lon": -84.3915277,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-46e9695fab4c",
+    "name": "Perry Residence Hall",
+    "lat": 33.7745055,
+    "lon": -84.3911396,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-fdf86c548beb",
+    "name": "Georgia Tech Hotel & Conference Center",
+    "lat": 33.7763918,
+    "lon": -84.3893323,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-30829978c1ba",
+    "name": "Global Learning & Conference Center",
+    "lat": 33.7763364,
+    "lon": -84.3900353,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-bd75f930d420",
+    "name": "Technology Square Parking Deck",
+    "lat": 33.7755755,
+    "lon": -84.3896259,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-c1c35abb7c1b",
+    "name": "The Exchange at West Midtown",
+    "lat": 33.78749,
+    "lon": -84.4044664,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-591d1d6bb0b7",
+    "name": "H. M. Patterson & Son Spring Hill Chapel",
+    "lat": 33.7824686,
+    "lon": -84.3896542,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-df0cfc92be9b",
+    "name": "North Avenue Apartments North",
+    "lat": 33.7707543,
+    "lon": -84.3911015,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-f2889de8a507",
+    "name": "North Avenue Dining Hall",
+    "lat": 33.7711135,
+    "lon": -84.3912714,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-6a08373e2997",
+    "name": "North Avenue Presbyterian Church",
+    "lat": 33.7710142,
+    "lon": -84.3843908,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-e8ead6184f77",
+    "name": "Rich Computer Center Building",
+    "lat": 33.7752708,
+    "lon": -84.3950197,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-680f2c1071ec",
+    "name": "Thomas Hinman Highbay Research Building",
+    "lat": 33.7748773,
+    "lon": -84.3949437,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-35d12a898496",
+    "name": "935M Apartments",
+    "lat": 33.7779022,
+    "lon": -84.4083632,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-1624de2304f4",
+    "name": "Tens On West",
+    "lat": 33.7818713,
+    "lon": -84.388513,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-161dee606c6e",
+    "name": "Live 8 West Apartments",
+    "lat": 33.7785994,
+    "lon": -84.4079477,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-26c903f8a373",
+    "name": "Lutheran Church of the Redeemer",
+    "lat": 33.7746298,
+    "lon": -84.3842066,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "building-32ad8bb94277",
+    "name": "Spectrum On Spring",
+    "lat": 33.7892431,
+    "lon": -84.3897621,
+    "kind": "building",
+    "source": "OpenStreetMap campus snapshot"
+  },
+  {
+    "id": "stop-210",
+    "name": "14th St & State St",
+    "lat": 33.78613,
+    "lon": -84.3988,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-399",
+    "name": "5th Street Bridge EB",
+    "lat": 33.7768308694,
+    "lon": -84.3920206208,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-388",
+    "name": "5th Street Bridge EB",
+    "lat": 33.7768308694,
+    "lon": -84.3920206208,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-398",
+    "name": "5th Street Bridge WB",
+    "lat": 33.776943,
+    "lon": -84.391707,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-387",
+    "name": "5th Street Bridge WB",
+    "lat": 33.776943,
+    "lon": -84.391707,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-271",
+    "name": "8th St & Hemphill Ave",
+    "lat": 33.779631,
+    "lon": -84.40274,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-283",
+    "name": "8th St & Hemphill Ave",
+    "lat": 33.779631,
+    "lon": -84.40274,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-402",
+    "name": "Academy of Medicine",
+    "lat": 33.778536,
+    "lon": -84.38724,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-391",
+    "name": "Academy of Medicine",
+    "lat": 33.778536,
+    "lon": -84.38724,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-195",
+    "name": "Baker Building on State St.",
+    "lat": 33.78034577,
+    "lon": -84.39922995,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-264",
+    "name": "Brown Residence Hall",
+    "lat": 33.771857,
+    "lon": -84.39192,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-280",
+    "name": "COP & North Ave.",
+    "lat": 33.7706651711,
+    "lon": -84.3921848307,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-302",
+    "name": "COP & North Ave.",
+    "lat": 33.7706651711,
+    "lon": -84.3921848307,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-285",
+    "name": "CRC & Stamps Health",
+    "lat": 33.7751,
+    "lon": -84.40265,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-417",
+    "name": "CRC & Stamps Health",
+    "lat": 33.7751,
+    "lon": -84.40265,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-274",
+    "name": "Center St. Apartments & Hemphill Ave",
+    "lat": 33.77971,
+    "lon": -84.402416,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-208",
+    "name": "Center St. Apartments & Hemphill Ave",
+    "lat": 33.77971,
+    "lon": -84.402416,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-276",
+    "name": "Cherry Emerson",
+    "lat": 33.778179,
+    "lon": -84.397328,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-409",
+    "name": "Cherry Emerson",
+    "lat": 33.778179,
+    "lon": -84.397328,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-392",
+    "name": "Clough Commons",
+    "lat": 33.775274,
+    "lon": -84.396138,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-401",
+    "name": "College of Business",
+    "lat": 33.77677,
+    "lon": -84.387753,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-390",
+    "name": "College of Business",
+    "lat": 33.77677,
+    "lon": -84.387753,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-284",
+    "name": "Couch Park",
+    "lat": 33.77796239,
+    "lon": -84.40201458,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-416",
+    "name": "Couch Park",
+    "lat": 33.77796239,
+    "lon": -84.40201458,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-306",
+    "name": "Exhibition Hall",
+    "lat": 33.774923097,
+    "lon": -84.4025365214,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-407",
+    "name": "Exhibition Hall",
+    "lat": 33.774923097,
+    "lon": -84.4025365214,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-303",
+    "name": "Ferst Dr & Cherry St",
+    "lat": 33.77228,
+    "lon": -84.39548,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-275",
+    "name": "Ferst Dr & Hemphill Ave",
+    "lat": 33.77845,
+    "lon": -84.400824,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-408",
+    "name": "Ferst Dr & Hemphill Ave",
+    "lat": 33.77845,
+    "lon": -84.400824,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-300",
+    "name": "Ferst Drive & Student Center",
+    "lat": 33.7734035096,
+    "lon": -84.3995830602,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-421",
+    "name": "Ferst Drive & Student Center",
+    "lat": 33.7734035096,
+    "lon": -84.3995830602,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-299",
+    "name": "Fitten Hall",
+    "lat": 33.778273,
+    "lon": -84.404191,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-394",
+    "name": "Fowler NB",
+    "lat": 33.7765386276,
+    "lon": -84.393579518,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-395",
+    "name": "Fowler SB",
+    "lat": 33.7765417384,
+    "lon": -84.3936997556,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-209",
+    "name": "GT Competition Center (575 14th Street)",
+    "lat": 33.78636825,
+    "lon": -84.40532109,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-211",
+    "name": "GTRI Conference Center",
+    "lat": 33.786282,
+    "lon": -84.395591,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-418",
+    "name": "Georgia Tech Police Department",
+    "lat": 33.781098,
+    "lon": -84.403725,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-213",
+    "name": "Graduate Living Center",
+    "lat": 33.781533,
+    "lon": -84.396217,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-206",
+    "name": "Hemphill Ave & Curran St",
+    "lat": 33.7846538176,
+    "lon": -84.4059668386,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-270",
+    "name": "Kendeda Building",
+    "lat": 33.77836,
+    "lon": -84.39956,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-196",
+    "name": "Kendeda Building",
+    "lat": 33.77836,
+    "lon": -84.39956,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-415",
+    "name": "Kendeda Building",
+    "lat": 33.77836,
+    "lon": -84.39956,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-277",
+    "name": "Klaus Building EB",
+    "lat": 33.777097,
+    "lon": -84.395484,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-410",
+    "name": "Klaus Building EB",
+    "lat": 33.777097,
+    "lon": -84.395484,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-268",
+    "name": "Klaus Building WB",
+    "lat": 33.777485,
+    "lon": -84.395576,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-412",
+    "name": "Klaus Building WB",
+    "lat": 33.777485,
+    "lon": -84.395576,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-396",
+    "name": "MARTA Midtown Station",
+    "lat": 33.7808216228,
+    "lon": -84.3864059203,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-385",
+    "name": "MARTA Midtown Station",
+    "lat": 33.7808216228,
+    "lon": -84.3864059203,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-212",
+    "name": "McCamish & 10th St.",
+    "lat": 33.7816116884,
+    "lon": -84.392611347,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-269",
+    "name": "Nanotechnology",
+    "lat": 33.77832,
+    "lon": -84.398084,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-413",
+    "name": "Nanotechnology",
+    "lat": 33.77832,
+    "lon": -84.398084,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-289",
+    "name": "North Avenue Apts - To East Campus",
+    "lat": 33.770206,
+    "lon": -84.391765,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-250",
+    "name": "North Avenue Apts - To West Campus",
+    "lat": 33.769921,
+    "lon": -84.391754,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-272",
+    "name": "Paper Tricentennial",
+    "lat": 33.780598,
+    "lon": -84.404657,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-404",
+    "name": "Publix at the Plaza",
+    "lat": 33.78067,
+    "lon": -84.388671,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-393",
+    "name": "Publix at the Plaza",
+    "lat": 33.78067,
+    "lon": -84.388671,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-267",
+    "name": "Russ Chandler Stadium",
+    "lat": 33.77699,
+    "lon": -84.39405,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-411",
+    "name": "Russ Chandler Stadium",
+    "lat": 33.77699,
+    "lon": -84.39405,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-305",
+    "name": "Student Center",
+    "lat": 33.7734278724,
+    "lon": -84.3991730437,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-420",
+    "name": "Student Center",
+    "lat": 33.7734278724,
+    "lon": -84.3991730437,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-400",
+    "name": "Technology Square EB",
+    "lat": 33.7768,
+    "lon": -84.38975,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-389",
+    "name": "Technology Square EB",
+    "lat": 33.7768,
+    "lon": -84.38975,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-397",
+    "name": "Technology Square WB",
+    "lat": 33.77692,
+    "lon": -84.38978,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-386",
+    "name": "Technology Square WB",
+    "lat": 33.77692,
+    "lon": -84.38978,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-266",
+    "name": "Techwood & 5th  - North",
+    "lat": 33.776757,
+    "lon": -84.39206,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-278",
+    "name": "Techwood Dr & 5th St - South",
+    "lat": 33.7764641679,
+    "lon": -84.3920991279,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-279",
+    "name": "Techwood Dr & Bobby Dodd Way",
+    "lat": 33.7743564577,
+    "lon": -84.3919958619,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-265",
+    "name": "Techwood Dr & Field Residence Hall",
+    "lat": 33.77406,
+    "lon": -84.39192,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-463",
+    "name": "Weber Building",
+    "lat": 33.772782,
+    "lon": -84.396964,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-301",
+    "name": "Weber Loop",
+    "lat": 33.77315003,
+    "lon": -84.39701207,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-419",
+    "name": "Weber Loop",
+    "lat": 33.77315003,
+    "lon": -84.39701207,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-273",
+    "name": "West Village",
+    "lat": 33.779616,
+    "lon": -84.404709,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  },
+  {
+    "id": "stop-282",
+    "name": "West Village",
+    "lat": 33.779616,
+    "lon": -84.404709,
+    "kind": "stop",
+    "source": "Stinger route snapshot"
+  }
+]

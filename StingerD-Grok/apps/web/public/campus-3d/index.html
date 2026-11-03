@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stinger Delay · Campus Twin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070a10;--panel:rgba(11,16,26,.84);--line:#222c3d;--text:#dde3ec;--muted:#8591a5;--gold:#EAAA00;--tech:#B3A369;
+  --navy:#003057;--good:#4cc38a;--bad:#ff5f56;--sky:#5ec8f2;--r:14px}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;overflow:hidden;background:var(--bg);color:var(--text);font:13px/1.45 Inter,system-ui,sans-serif}
+canvas#view{position:fixed;inset:0;width:100%;height:100%;display:block}
+.panel{position:fixed;z-index:5;background:var(--panel);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border:1px solid var(--line);border-radius:var(--r);box-shadow:0 12px 40px rgba(0,0,0,.45)}
+.mono{font-family:"JetBrains Mono",monospace}
+#brand{top:16px;left:16px;width:380px;padding:16px 18px}
+#brand .eyebrow{font:600 11px/1 "JetBrains Mono",monospace;letter-spacing:.18em;color:var(--gold)}
+#brand h1{font-size:21px;font-weight:700;margin:6px 0 2px;letter-spacing:-.01em}
+#brand p.q{color:var(--muted);font-size:12.5px}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.kpi{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.kpi b{display:block;font:600 19px/1.15 "JetBrains Mono",monospace;color:#fff}
+.kpi span{font-size:11px;color:var(--muted)}
+.kpi b.gold{color:var(--gold)} .kpi b.good{color:var(--good)}
+#side{top:16px;right:16px;bottom:118px;width:390px;display:flex;flex-direction:column}
+.tabs{display:flex;gap:2px;padding:8px 8px 0;border-bottom:1px solid var(--line)}
+.tabs button{flex:1;background:none;border:0;color:var(--muted);font:600 12px Inter;padding:9px 4px 10px;cursor:pointer;
+  border-bottom:2px solid transparent}
+.tabs button.on{color:#fff;border-color:var(--gold)}
+.tabs button:focus-visible,.btn:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.pane{display:none;padding:14px 16px;overflow:auto;flex:1}
+.pane.on{display:block}
+.pane h3{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:14px 0 8px;font-weight:600}
+.pane h3:first-child{margin-top:0}
+.row{display:flex;align-items:center;gap:8px;margin:6px 0}
+.row label{flex:0 0 44%;color:var(--muted)}
+.row input[type=range]{flex:1;width:auto;min-width:0}
+.seg{display:flex;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:9px;padding:2px}
+.seg button{flex:1;background:none;border:0;color:var(--muted);font:500 12px Inter;padding:6px 8px;border-radius:7px;cursor:pointer}
+.seg button.on{background:#1b2536;color:#fff}
+input[type=range]{accent-color:var(--gold);width:100%}
+.val{font-family:"JetBrains Mono",monospace;color:#fff;min-width:74px;text-align:right}
+.note{color:var(--muted);font-size:11.5px;margin:6px 0}
+.legend{height:10px;border-radius:5px;background:linear-gradient(90deg,#000004,#420a68,#932667,#dd513a,#fca50a,#fcffa4)}
+.legend-l{display:flex;justify-content:space-between;font:11px "JetBrains Mono";color:var(--muted);margin-top:3px}
+.route{display:grid;grid-template-columns:10px 1fr auto;gap:4px 10px;align-items:center;padding:8px 10px;border:1px solid var(--line);
+  border-radius:10px;margin:6px 0;background:rgba(255,255,255,.02)}
+.route i{width:10px;height:10px;border-radius:3px;grid-row:span 2}
+.route .n{font-weight:600}.route .m{color:var(--muted);font-size:11.5px;grid-column:2/4}
+.route .k{font:600 12px "JetBrains Mono";color:#fff}
+table.des{border-collapse:collapse;width:100%;font:11px "JetBrains Mono"}
+table.des td,table.des th{padding:3px 2px;text-align:center;border:1px solid #0b0f17}
+table.des th{color:var(--muted);font-weight:500}
+.mat{display:grid;grid-template-columns:1fr auto auto;gap:6px;padding:6px 8px;border-radius:8px;cursor:pointer;border:1px solid transparent}
+.mat:hover{background:rgba(255,255,255,.04)} .mat.on{border-color:var(--gold);background:rgba(234,170,0,.07)}
+.mat .f{font-weight:600}.mat .e{font:12px "JetBrains Mono";color:var(--muted)}.mat .s{font:600 12px "JetBrains Mono"}
+.tag{font:600 9.5px Inter;letter-spacing:.06em;padding:1px 5px;border-radius:4px;margin-left:5px;vertical-align:1px}
+.tag.bad{background:rgba(255,95,86,.15);color:var(--bad)}.tag.ok{background:rgba(76,195,138,.13);color:var(--good)}
+.funnel div{display:flex;align-items:center;gap:8px;margin:3px 0;font-size:11.5px}
+.funnel span.bar{height:8px;border-radius:4px;background:var(--tech)}
+.funnel em{font:normal 11px "JetBrains Mono";color:#fff;margin-left:auto}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:12px}
+.facts dt{color:var(--muted)} .facts dd{font-family:"JetBrains Mono";text-align:right}
+canvas.chart{width:100%;height:150px;display:block;margin:4px 0 2px}
+#xtal{width:100%;height:200px;display:block;border-radius:10px;background:radial-gradient(#141c2b,#0a0e16)}
+#timeline{left:16px;right:16px;bottom:16px;height:88px;padding:12px 18px;display:grid;grid-template-columns:auto 1fr 300px;gap:18px;align-items:center}
+.btn{background:#18202e;border:1px solid var(--line);color:#fff;border-radius:10px;height:36px;min-width:44px;font:600 13px Inter;cursor:pointer;padding:0 12px}
+.btn.play{width:48px;height:48px;border-radius:50%;background:var(--gold);color:#111;border:0;font-size:16px}
+.clock{font:600 26px/1 "JetBrains Mono";color:#fff}
+.clock small{font-size:12px;color:var(--muted);margin-left:6px}
+.sunline{font-size:11.5px;color:var(--muted);margin-top:4px}
+#tip{position:fixed;pointer-events:none;background:rgba(9,13,21,.95);border:1px solid var(--line);border-radius:10px;padding:8px 10px;
+  font-size:12px;display:none;max-width:280px;z-index:9}
+#tip b{color:#fff}
+.lbl{position:fixed;z-index:1;pointer-events:none;font:600 11px Inter;color:#fff;background:rgba(9,13,21,.8);border:1px solid rgba(76,195,138,.6);
+  padding:3px 7px;border-radius:6px;white-space:nowrap;transform:translate(-50%,-130%)}
+.lbl.roof{border-color:rgba(234,170,0,.7)}
+#credits{position:fixed;left:16px;bottom:112px;font-size:10.5px;color:#5b6679;max-width:380px}
+#credits a{color:#7d8aa0}
+@media (max-width:900px){#side{top:auto;left:16px;right:16px;width:auto;height:42vh;bottom:112px}#brand{width:auto;right:16px}#credits{display:none}
+  #timeline{grid-template-columns:auto 1fr}#timeline .dates{display:none}}
+
+body.embed #brand,body.embed #side,body.embed #timeline,body.embed #credits{display:none!important}
+body.embed #plan-hl{left:12px;bottom:12px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<script src="data.js"></script>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+ "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"}}</script>
+</head>
+<body>
+<canvas id="view" aria-label="3D model of the Georgia Tech campus"></canvas>
+
+<header class="panel" id="brand">
+  <div class="eyebrow">STINGER DELAY · CAMPUS TWIN</div>
+  <h1>Georgia Tech campus</h1>
+  <p class="q">Stinger bus replay for trip planning — navigation, not energy</p>
+  <div class="kpis">
+    <div class="kpi"><b id="k-routes">–</b><span>Stinger routes</span></div>
+    <div class="kpi"><b class="gold" id="k-buses">–</b><span>buses in replay</span></div>
+    <div class="kpi"><b class="good" id="k-stops">–</b><span>stops mapped</span></div>
+    <div class="kpi"><b id="k-mode">arch</b><span>building style</span></div>
+  </div>
+</header>
+
+<aside class="panel" id="side">
+  <nav class="tabs" role="tablist">
+    <button class="on" data-t="scene">Scene</button><button data-t="fleet">Routes</button>
+  </nav>
+  <section class="pane on" id="p-scene">
+    <h3>View</h3>
+    <div class="row"><label for="busScale">Bus size (exaggeration)</label><input id="busScale" type="range" min="1" max="5" step=".5" value="3.5"><span class="val" id="busScaleV">3.5×</span></div>
+    <div class="row"><label for="labels">Labels</label><input id="labels" type="checkbox" checked></div>
+    <div class="seg" id="cams" style="margin-top:8px"><button data-v="orbit">Overview</button><button data-v="kendeda">Kendeda hub</button><button data-v="top">Top down</button></div>
+    <h3>What you are looking at</h3>
+    <p class="note">Buildings, roads and green space come from OpenStreetMap. Buses replay <b>real GPS polls</b> from the Stinger Delay project (every 15 s, March 2026), map-matched onto the official route polylines. Blue has no logs, so its buses are <i>simulated</i> (translucent). Sun position drives lighting only — solar yield / materials / energy UI has been removed for the navigation build.</p>
+  </section>
+  <section class="pane" id="p-fleet">
+    <h3>Routes (recorded weekday)</h3><div id="routes"></div>
+    <p class="note">Replay labels mark real GPS days. Simulated routes mirror Red geometry when logs are missing. Trip plans from the web shell draw walk/ride overlays on this scene.</p>
+  </section>
+</aside>
+
+<div id="credits">Data: © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (ODbL) · GT Stinger GPS (bus.gatech.edu, Stinger Delay project)</div>
+
+<footer class="panel" id="timeline">
+  <button class="btn play" id="play" aria-label="Play or pause">❚❚</button>
+  <div>
+    <div class="row" style="margin:0"><span class="clock" id="clock">08:00</span>
+      <input id="tod" type="range" min="0" max="86399" step="60" value="34200" aria-label="Time of day" style="margin-left:16px">
+      <div class="seg" id="speed" style="margin-left:10px;min-width:170px"><button data-v="60">60×</button><button data-v="300" class="on">300×</button><button data-v="1200">1200×</button></div></div>
+    <div class="sunline" id="sunline">–</div>
+  </div>
+  <div class="dates">
+    <div class="row" style="margin:0"><label for="doy">Sun &amp; shadows for</label><span class="val" id="doyV">–</span></div>
+    <input id="doy" type="range" min="1" max="365" value="69" aria-label="Day of year">
+    <div class="note" style="margin:2px 0 0">Buses replay recorded Mar 2026 weekdays</div>
+  </div>
+</footer>
+<div id="tip"></div>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
+import { EffectComposer } from 'three/addons/postprocessing/EffectComposer.js';
+import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
+import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
+import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+
+const T = window.TWIN, E = T.energy, M = T.materials;
+const _miss = document.createElement('div');
+const $ = s => document.querySelector(s) || _miss, $$ = s => [...document.querySelectorAll(s)];
+const pairs = f => { const o = []; for (let i = 0; i < f.length; i += 2) o.push([f[i], f[i + 1]]); return o; };
+const V3 = (x, y, h = 0) => new THREE.Vector3(x, h, -y);           // data: x east, y north  ->  three: y up
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+const fmt = (v, d = 0) => v.toLocaleString('en-US', { maximumFractionDigits: d, minimumFractionDigits: d });
+const state = { doy: 69, t: 9.5 * 3600, playing: true, speed: 300, batt: 300, strat: 'drive', roofs: 1, stor: 0, mode: 'arch',
+                mat: M.picks.findIndex(p => p.f === 'Si'), busScale: 3.5, labels: true };
+
+// ------------------------------------------------------------------ renderer / scene
+const canvas = $('#view');
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance' });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
+renderer.setSize(innerWidth, innerHeight);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+const scene = new THREE.Scene();
+scene.fog = new THREE.Fog(0x070a10, 2600, 6500);
+const camera = new THREE.PerspectiveCamera(38, innerWidth / innerHeight, 5, 20000);
+const controls = new OrbitControls(camera, canvas);
+controls.enableDamping = true; controls.maxPolarAngle = 1.47; controls.minDistance = 60; controls.maxDistance = 6500;
+const CENTER = new THREE.Vector3(120, 0, 60);
+camera.position.set(-450, 1150, 1700); controls.target.copy(CENTER);
+
+const hemi = new THREE.HemisphereLight(0x9fb4d0, 0x1a1f28, 0.6); scene.add(hemi);
+const sun = new THREE.DirectionalLight(0xfff1d6, 2.6);
+sun.castShadow = true; sun.shadow.mapSize.set(4096, 4096);
+Object.assign(sun.shadow.camera, { left: -1700, right: 1700, top: 1700, bottom: -1700, near: 10, far: 7000 });
+sun.shadow.camera.updateProjectionMatrix();
+sun.shadow.bias = -0.0004; sun.shadow.normalBias = 0.6;
+sun.target.position.copy(CENTER); scene.add(sun, sun.target);
+
+const composer = new EffectComposer(renderer);
+composer.addPass(new RenderPass(scene, camera));
+const bloom = new UnrealBloomPass(new THREE.Vector2(innerWidth / 2, innerHeight / 2), 0.55, 0.45, 0.82);
+composer.addPass(bloom); composer.addPass(new OutputPass());
+
+// ground, green space, roads
+const ground = new THREE.Mesh(new THREE.PlaneGeometry(12000, 12000).rotateX(-Math.PI / 2),
+  new THREE.MeshStandardMaterial({ color: 0x2a303b, roughness: 1 }));
+ground.receiveShadow = true; scene.add(ground);
+
+const greens = T.green.map(g => { const p = pairs(g.p); return new THREE.ShapeGeometry(new THREE.Shape(p.map(([x, y]) => new THREE.Vector2(x, y)))).rotateX(-Math.PI / 2).translate(0, .15, 0); });
+const greenMesh = new THREE.Mesh(mergeGeometries(greens), new THREE.MeshStandardMaterial({ color: 0x2c5238, roughness: 1 }));
+greenMesh.receiveShadow = true; scene.add(greenMesh);
+
+function ribbons(lines, y) {     // lines: [{pts:[[x,y]..], w, color:THREE.Color}] -> one flat mesh of quads
+  const pos = [], col = [];
+  for (const { pts, w, color } of lines) for (let i = 0; i + 1 < pts.length; i++) {
+    const [ax, ay] = pts[i], [bx, by] = pts[i + 1], dx = bx - ax, dy = by - ay, L = Math.hypot(dx, dy) || 1;
+    const nx = -dy / L * w / 2, ny = dx / L * w / 2, ex = dx / L * w / 2, ey = dy / L * w / 2;   // extend ends to hide joints
+    const q = [[ax - ex + nx, ay - ey + ny], [ax - ex - nx, ay - ey - ny], [bx + ex + nx, by + ey + ny], [bx + ex - nx, by + ey - ny]];
+    for (const k of [0, 1, 2, 2, 1, 3]) { pos.push(q[k][0], y, -q[k][1]); col.push(color.r, color.g, color.b); }
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  g.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
+  g.computeVertexNormals();
+  return g;
+}
+const ROADW = { motorway: 18, trunk: 16, primary: 13, secondary: 11, tertiary: 9, residential: 7, unclassified: 6, living_street: 6,
+  service: 4.5, pedestrian: 5, footway: 2, path: 2, cycleway: 2.5, motorway_link: 8, trunk_link: 8, primary_link: 7, secondary_link: 7, tertiary_link: 6 };
+const cMajor = new THREE.Color(0x454e5e), cMinor = new THREE.Color(0x3a4252), cFoot = new THREE.Color(0x4a5242);
+const roadMesh = new THREE.Mesh(ribbons(T.roads.map(r => ({ pts: pairs(r.p), w: ROADW[r.k] || 4,
+  color: ['footway', 'path', 'cycleway', 'pedestrian'].includes(r.k) ? cFoot : (ROADW[r.k] || 4) >= 9 ? cMajor : cMinor })), .25),
+  new THREE.MeshStandardMaterial({ vertexColors: true, roughness: .95, polygonOffset: true, polygonOffsetFactor: -1 }));
+roadMesh.receiveShadow = true; scene.add(roadMesh);
+
+// ------------------------------------------------------------------ buildings (one merged mesh, per-vertex colours)
+const bGeos = [];
+T.buildings.forEach((b, i) => {
+  let p = pairs(b.p);
+  if (p.length > 2 && p[0][0] === p.at(-1)[0] && p[0][1] === p.at(-1)[1]) p = p.slice(0, -1);
+  if (p.length < 3) return;
+  const g = new THREE.ExtrudeGeometry(new THREE.Shape(p.map(([x, y]) => new THREE.Vector2(x, y))), { depth: b.h, bevelEnabled: false });
+  g.rotateX(-Math.PI / 2); g.deleteAttribute('uv');
+  g.setAttribute('bid', new THREE.Float32BufferAttribute(new Float32Array(g.attributes.position.count).fill(i), 1));
+  bGeos.push(g);
+});
+const bGeom = mergeGeometries(bGeos);
+bGeom.setAttribute('color', new THREE.Float32BufferAttribute(new Float32Array(bGeom.attributes.position.count * 3), 3));
+const bMesh = new THREE.Mesh(bGeom, new THREE.MeshStandardMaterial({ vertexColors: true, roughness: .78, metalness: .02 }));
+bMesh.castShadow = bMesh.receiveShadow = true; scene.add(bMesh);
+
+const YMAX = Math.max(...T.buildings.filter(b => b.c).map(b => b.y));      // unshaded roof
+const INFERNO = ['#000004', '#420a68', '#932667', '#dd513a', '#fca50a', '#fcffa4'].map(c => new THREE.Color(c));
+const inferno = u => { u = clamp(u, 0, 1) * (INFERNO.length - 1); const i = Math.min(Math.floor(u), INFERNO.length - 2);
+  return INFERNO[i].clone().lerp(INFERNO[i + 1], u - i); };
+function paintBuildings() {
+  const col = bGeom.attributes.color, nrm = bGeom.attributes.normal, bid = bGeom.attributes.bid;
+  const adopt = new Set(ledger.adopted);
+  const wallC = new THREE.Color(0x3a4458), offRoof = new THREE.Color(0x2a3140), offWall = new THREE.Color(0x1f2530),
+        plain = new THREE.Color(0xc8cdd6), plainWall = new THREE.Color(0x9aa1ad), green = new THREE.Color(0x4cc38a), dim = new THREE.Color(0x3b4556);
+  const roofC = T.buildings.map((b, i) => state.mode === 'arch' ? plain : state.mode === 'adopt' ? (adopt.has(i) ? green : b.c ? dim : offRoof)
+    : b.c && b.a > 0 ? inferno(1 - Math.log10(Math.max(1 - b.y / YMAX, 1e-3) / 1e-3) / Math.log10(500)) : offRoof);
+  for (let v = 0; v < col.count; v++) {
+    const i = bid.getX(v), b = T.buildings[i], roof = nrm.getY(v) > .5;
+    const c = roof ? roofC[i] : state.mode === 'arch' ? plainWall : b.c ? wallC : offWall;
+    col.setXYZ(v, c.r, c.g, c.b);
+  }
+  col.needsUpdate = true;
+  const clay = state.mode === 'arch';          // light 'architectural model' ground makes the shadows read
+  ground.material.color.set(clay ? 0x8a8f98 : 0x2a303b); greenMesh.material.color.set(clay ? 0x7f9a84 : 0x2c5238);
+  roadMesh.material.color.set(clay ? 0xd0d3d8 : 0xffffff);
+}
+
+// ------------------------------------------------------------------ routes, stops, charger sites
+const routes = T.routes.map(r => {
+  const p = pairs(r.p), cum = [0];
+  for (let i = 1; i < p.length; i++) cum.push(cum[i - 1] + Math.hypot(p[i][0] - p[i - 1][0], p[i][1] - p[i - 1][1]));
+  return { ...r, pts: p, cum, total: cum.at(-1), col: new THREE.Color(r.color) };
+});
+const routeMesh = new THREE.Mesh(ribbons(routes.map(r => ({ pts: r.pts, w: 4.5, color: r.col.clone().multiplyScalar(1.4) })), .7),
+  new THREE.MeshBasicMaterial({ vertexColors: true, toneMapped: false, transparent: true, opacity: .9 }));
+scene.add(routeMesh);
+function posAt(r, s) {                  // point + heading at distance s along a looped polyline
+  s = ((s % r.total) + r.total) % r.total;
+  let lo = 0, hi = r.cum.length - 1;
+  while (hi - lo > 1) { const m = (lo + hi) >> 1; if (r.cum[m] <= s) lo = m; else hi = m; }
+  const a = r.pts[lo], b = r.pts[hi], f = (s - r.cum[lo]) / ((r.cum[hi] - r.cum[lo]) || 1);
+  return { x: a[0] + f * (b[0] - a[0]), y: a[1] + f * (b[1] - a[1]), ang: Math.atan2(b[1] - a[1], b[0] - a[0]) };
+}
+const stopGeo = new THREE.CylinderGeometry(2.2, 2.2, 7, 10).translate(0, 3.5, 0);
+routes.forEach(r => r.stops.forEach(s => { const m = new THREE.Mesh(stopGeo, new THREE.MeshStandardMaterial({ color: r.col, emissive: r.col, emissiveIntensity: .4 }));
+  m.position.copy(V3(s.x, s.y)); scene.add(m); }));
+const siteObjs = Object.entries(T.sites).map(([name, [x, y]]) => {
+  const g = new THREE.Group(); g.position.copy(V3(x, y));
+  const beam = new THREE.Mesh(new THREE.CylinderGeometry(3, 3, 60, 16).translate(0, 30, 0),
+    new THREE.MeshBasicMaterial({ color: new THREE.Color(0x4cc38a).multiplyScalar(2.2), toneMapped: false }));
+  const ring = new THREE.Mesh(new THREE.RingGeometry(14, 18, 48).rotateX(-Math.PI / 2),
+    new THREE.MeshBasicMaterial({ color: new THREE.Color(0x4cc38a).multiplyScalar(2), toneMapped: false, transparent: true, side: THREE.DoubleSide }));
+  ring.position.y = 1; g.add(beam, ring); scene.add(g);
+  const users = routes.filter(r => r.site === name).map(r => r.name).join(' / ');
+  return { g, ring, label: mkLabel(`⚡ ${name.replace(' - To West Campus', '').replace(' EB', '')} · ${users}`), h: 70 };
+});
+function mkLabel(text, cls = '') { const d = document.createElement('div'); d.className = 'lbl ' + cls; d.textContent = text; document.body.append(d); return d; }
+
+// ------------------------------------------------------------------ buses
+const busGeo = new THREE.BoxGeometry(12, 3.2, 2.6).translate(0, 1.6, 0);
+const haloGeo = new THREE.CircleGeometry(7, 32).rotateX(-Math.PI / 2);
+const buses = [];
+function addBus(r, rec, k) {
+  const body = new THREE.Mesh(busGeo, new THREE.MeshStandardMaterial({ color: r.col, emissive: r.col, emissiveIntensity: .35,
+    transparent: !!r.synthetic, opacity: r.synthetic ? .55 : 1 }));
+  body.castShadow = true;
+  const halo = new THREE.Mesh(haloGeo, new THREE.MeshBasicMaterial({ transparent: true, opacity: .75, blending: THREE.AdditiveBlending,
+    depthWrite: false, toneMapped: false }));
+  halo.position.y = .9; scene.add(body, halo);
+  buses.push({ r, rec, k, body, halo, soc: 1, v: 0 });
+}
+routes.forEach(r => {
+  if (r.replay) r.replay.veh.forEach(v => addBus(r, v, 0));
+  else for (let k = 0; k < Math.round(r.n_bus); k++) addBus(r, null, k);
+});
+const auxKW = t => 4 + Math.min(.9 * Math.abs(t - 20), 25);         // same HVAC model as fleet.py
+const socColor = s => s > .5 ? new THREE.Color(0x4cc38a).lerp(new THREE.Color(0xf2c14e), (1 - s) * 2 - 0) : new THREE.Color(0xf2c14e).lerp(new THREE.Color(0xff5f56), clamp((.5 - s) / .4, 0, 1));
+function updateBuses(t, tempC) {
+  for (const b of buses) {
+    let D = null, Ekwh = 0, t0 = 0;
+    if (b.rec) {
+      const f = t / 10 - b.rec.i0, j = Math.floor(f), A = b.rec.D;
+      if (j >= 0 && j + 1 < A.length && A[j] != null && A[j + 1] != null) {
+        D = A[j] + (f - j) * (A[j + 1] - A[j]); b.v = (A[j + 1] - A[j]) / 10;
+        Ekwh = b.rec.E[j] + (f - j) * (b.rec.E[j + 1] - b.rec.E[j]); t0 = b.rec.i0 * 10;
+      }
+    } else if (t > 7 * 3600 && t < 23 * 3600) {          // synthetic Blue: evenly spaced, scheduled loop time
+      const n = Math.round(b.r.n_bus); D = (t - 7 * 3600) / b.r.loop_s * b.r.total + b.k * b.r.total / n; b.v = b.r.total / b.r.loop_s;
+      Ekwh = (t - 7 * 3600) / 3600 * 9.5; t0 = 7 * 3600;      // ~Red's traction kW per bus-hour
+    }
+    const on = D != null;
+    b.body.visible = b.halo.visible = on;
+    if (!on) continue;
+    const p = posAt(b.r, D), s = state.busScale;
+    b.body.position.copy(V3(p.x, p.y, 0)); b.body.rotation.y = p.ang; b.body.scale.setScalar(s);
+    b.halo.position.x = b.body.position.x; b.halo.position.z = b.body.position.z; b.halo.scale.setScalar(s * .8);
+    b.soc = clamp(1 - (Ekwh + auxKW(tempC) * (t - t0) / 3600) / state.batt, 0, 1);
+    b.halo.material.color.copy(socColor(b.soc)).multiplyScalar(1.6);
+  }
+}
+
+// ------------------------------------------------------------------ time & sun
+const DST = doy => doy >= 67 && doy < 305;              // 2026: Mar 8 - Nov 1
+const utcHour = (doy, tLocal) => (doy - 1) * 24 + tLocal / 3600 + (DST(doy) ? 4 : 5);
+function sunAt(h) {            // arrays are at mid-hour (h + 0.5) UTC
+  const x = clamp(h - .5, 0, 8758.999), i = Math.floor(x), f = x - i;
+  let a0 = T.sun.az[i], a1 = T.sun.az[i + 1]; if (a1 - a0 > 180) a1 -= 360; if (a0 - a1 > 180) a1 += 360;
+  return { az: (a0 + f * (a1 - a0) + 360) % 360, el: T.sun.el[i] + f * (T.sun.el[i + 1] - T.sun.el[i]) };
+}
+const dateOf = doy => new Date(Date.UTC(2026, 0, doy));
+const SKY_NIGHT = new THREE.Color(0x05070d), SKY_DAY = new THREE.Color(0x24344d), SKY_DUSK = new THREE.Color(0x3a2a3a);
+function updateSun() {
+  const h = utcHour(state.doy, state.t), s = sunAt(h), az = s.az * Math.PI / 180, el = s.el * Math.PI / 180;
+  const dir = new THREE.Vector3(Math.sin(az) * Math.cos(el), Math.sin(el), -Math.cos(az) * Math.cos(el));
+  sun.position.copy(CENTER).addScaledVector(dir, 3500);
+  const day = clamp(s.el / 12, 0, 1), dusk = clamp(1 - Math.abs(s.el - 2) / 8, 0, 1);
+  sun.intensity = 3.4 * day; sun.color.setHSL(.1, .6, .75 + .2 * day);
+  hemi.intensity = .15 + .45 * day;
+  const sky = SKY_NIGHT.clone().lerp(SKY_DAY, day).lerp(SKY_DUSK, dusk * .5);
+  scene.background = sky; scene.fog.color.copy(sky);
+  const i = clamp(Math.floor(h), 0, 8759), temp = E.temp[i];
+  const tl = String(Math.floor(state.t / 3600)).padStart(2, '0') + ':' + String(Math.floor(state.t % 3600 / 60)).padStart(2, '0');
+  $('#clock').innerHTML = `${tl}<small>${DST(state.doy) ? 'EDT' : 'EST'}</small>`;
+  $('#sunline').textContent = `Sun ${s.el > 0 ? `${s.el.toFixed(1)}° up, azimuth ${s.az.toFixed(0)}°` : 'below the horizon'} · outdoor ${temp.toFixed(1)} °C`;
+  return temp;
+}
+
+// ------------------------------------------------------------------ energy ledger (mirrors twin.py)
+const campusIdx = T.buildings.map((b, i) => i).filter(i => T.buildings[i].c && T.buildings[i].a > 0)
+  .sort((i, j) => T.buildings[j].y * T.buildings[j].a - T.buildings[i].y * T.buildings[i].a);
+const campusSum = campusIdx.reduce((s, i) => s + T.buildings[i].y * T.buildings[i].a, 0);
+const PV1 = E.pv_per_eta.reduce((a, b) => a + b, 0);
+const eta = () => E.practical * M.picks[state.mat].sq_exp;
+const ledger = { adopted: [], share: 0, breakEven: 1 };
+function dispatch(pv, load, cap) {
+  const r = Math.sqrt(E.batt_rt); let soc = 0, grid = 0;
+  for (let t = 0; t < load.length; t++) { const net = pv[t] - load[t];
+    if (net >= 0) soc += Math.min(net * r, cap - soc);
+    else { const take = Math.min(-net, soc * r); soc -= take / r; grid += -net - take; } }
+  return grid;
+}
+const loadOf = () => E[state.strat], sum = a => a.reduce((x, y) => x + y, 0);
+function recompute(fromMaterial) {
+  const need = sum(E.drive), n = eta();
+  let acc = 0, k = 0;
+  while (k < campusIdx.length && acc < need) { const b = T.buildings[campusIdx[k++]]; acc += b.y * b.a / campusSum * PV1 * n; }
+  ledger.breakEven = k;
+  if (fromMaterial) { state.roofs = k; $('#roofs').value = k; }
+  ledger.adopted = campusIdx.slice(0, state.roofs);
+  ledger.share = ledger.adopted.reduce((s, i) => s + T.buildings[i].y * T.buildings[i].a, 0) / campusSum;
+  const pv = E.pv_per_eta.map(v => v * n * ledger.share), load = loadOf();
+  ledger.pv = pv;
+  ledger.sf = 1 - dispatch(pv, load, state.stor) / sum(load);
+  const busCount = routes.reduce((n, r) => n + (r.replay ? r.replay.veh.length : (r.synthetic ? 2 : 0)), 0);
+  const stopCount = routes.reduce((n, r) => n + (r.stops ? r.stops.length : 0), 0);
+  $('#k-routes').textContent = String(routes.length);
+  $('#k-buses').textContent = String(busCount);
+  $('#k-stops').textContent = String(stopCount || '—');
+  $('#k-mode').textContent = state.mode;
+  paintBuildings(); roofLabels();
+}
+let roofLbls = [];
+function roofLabels() {
+  roofLbls.forEach(l => l.d.remove());
+  roofLbls = ledger.adopted.slice(0, 4).map(i => { const b = T.buildings[i], p = pairs(b.p);
+    const cx = p.reduce((s, q) => s + q[0], 0) / p.length, cy = p.reduce((s, q) => s + q[1], 0) / p.length;
+    return { d: mkLabel(`☀ ${b.n || 'unnamed roof'} · ${fmt(b.y * b.a / campusSum * PV1 * eta() / 1000)} MWh/yr`, 'roof'), p: V3(cx, cy, b.h + 4) }; });
+}
+
+// ------------------------------------------------------------------ charts (tiny canvas helpers)
+function chart(cv, { series, xLabels, yMax, bars, markX, unit = '' }) {
+  const dpr = devicePixelRatio || 1, w = cv.clientWidth, h = cv.clientHeight; cv.width = w * dpr; cv.height = h * dpr;
+  const g = cv.getContext('2d'); g.scale(dpr, dpr); g.clearRect(0, 0, w, h);
+  const L = 34, B = 18, R = 6, Tp = 8, W = w - L - R, H = h - B - Tp, n = series[0].data.length;
+  yMax = yMax || Math.max(...series.flatMap(s => s.data)) * 1.1 || 1;
+  g.strokeStyle = '#1f2838'; g.fillStyle = '#6f7a8d'; g.font = '10px JetBrains Mono'; g.lineWidth = 1;
+  for (let k = 0; k <= 3; k++) { const y = Tp + H - H * k / 3; g.beginPath(); g.moveTo(L, y); g.lineTo(L + W, y); g.stroke();
+    g.fillText(fmt(yMax * k / 3, yMax < 10 ? 1 : 0) + unit, 2, y + 3); }
+  (xLabels || []).forEach(([i, t]) => g.fillText(t, L + W * (i + .5) / n - 8, h - 4));
+  series.forEach((s, si) => {
+    g.strokeStyle = g.fillStyle = s.color;
+    if (bars) { const bw = W / n / series.length * .8;
+      s.data.forEach((v, i) => g.fillRect(L + W * i / n + bw * si + W / n * .1, Tp + H - H * v / yMax, bw, H * v / yMax)); return; }
+    g.lineWidth = 2; g.beginPath();
+    s.data.forEach((v, i) => { const x = L + W * (n > 1 ? i / (n - 1) : 0), y = Tp + H - H * clamp(v / yMax, 0, 1); i ? g.lineTo(x, y) : g.moveTo(x, y); });
+    if (s.fill) { g.lineTo(L + W, Tp + H); g.lineTo(L, Tp + H); g.globalAlpha = .25; g.fill(); g.globalAlpha = 1; } else g.stroke();
+  });
+  if (markX != null) { g.strokeStyle = '#EAAA00'; g.setLineDash([3, 3]); g.beginPath(); g.moveTo(L + W * markX, Tp); g.lineTo(L + W * markX, Tp + H); g.stroke(); g.setLineDash([]); }
+  const lx = L + 6; series.forEach((s, i) => { if (!s.name) return; g.fillStyle = s.color; g.fillRect(lx + i * 118, Tp + 2, 8, 8);
+    g.fillStyle = '#b8c1cf'; g.fillText(s.name, lx + 12 + i * 118, Tp + 10); });
+}
+function drawEnergy() {
+  if (!$('#p-energy') || $('#p-energy') === _miss || !$('#p-energy').classList.contains('on')) return;
+  const h0 = Math.round(utcHour(state.doy, 0)), idx = [...Array(24)].map((_, k) => clamp(h0 + k, 0, 8759)), load = loadOf();
+  chart($('#c-day'), { series: [{ name: 'PV kW', color: '#EAAA00', data: idx.map(i => ledger.pv[i]), fill: true },
+    { name: 'charging kW', color: '#5ec8f2', data: idx.map(i => load[i]) }], xLabels: [[0, '0h'], [6, '6'], [12, '12'], [18, '18']],
+    markX: state.t / 86400 });
+  const mon = [...Array(12)].map(() => [0, 0]);
+  for (let i = 0; i < 8760; i++) { const m = new Date(Date.UTC(2026, 0, 1) + i * 3.6e6).getUTCMonth(); mon[m][0] += ledger.pv[i] / 1000; mon[m][1] += load[i] / 1000; }
+  chart($('#c-month'), { bars: true, series: [{ name: 'PV', color: '#EAAA00', data: mon.map(m => m[0]) }, { name: 'demand', color: '#5ec8f2', data: mon.map(m => m[1]) }],
+    xLabels: [[0, 'J'], [3, 'A'], [6, 'J'], [9, 'O']] });
+  const caps = [0, 500, 1000, 2000, 3000, 4000, 6000, 8000];
+  const sf = k => caps.map(c => 100 * (1 - dispatch(ledger.pv, E[k], c) / sum(E[k])));
+  chart($('#c-sf'), { yMax: 100, unit: '%', series: [{ name: 'daytime', color: '#4cc38a', data: sf('drive') }, { name: 'overnight', color: '#d97757', data: sf('night') }],
+    xLabels: [[0, '0'], [2, '1'], [4, '3'], [7, '8 MWh']], markX: caps.findIndex(c => c >= state.stor) / (caps.length - 1) });
+}
+
+// ------------------------------------------------------------------ fleet tab
+$('#routes').innerHTML = routes.map(r => `<div class="route"><i style="background:${r.color}"></i><span class="n">${r.name}${r.synthetic ? ' <span class="tag bad">SIMULATED</span>' : ''}</span>
+  <span class="k">${r.replay ? r.replay.veh.length + ' buses' : 'sim'}</span><span class="m">${r.replay ? `replaying ${r.replay.day}` : 'no GPS: Red\'s counter-rotating twin'} · ${r.mph} mph avg · ${Math.round(100 * r.stopped)}% stopped · loop ${Math.round(r.loop_s / 60)} min</span></div>`).join('');
+function drawDesign() {
+  if (!document.querySelector('#des')) return;
+  const days = [...new Set(T.design.map(d => d.day))], batts = [...new Set(T.design.map(d => d.batt))];
+  const cell = p => `background:hsl(${120 - 120 * p},55%,${30 + 10 * (1 - p)}%)`;
+  $('#des').innerHTML = days.map(day => `<div class="note" style="margin:8px 0 3px;color:#b8c1cf">${day}</div><table class="des"><tr><th>chg\\kWh</th>${batts.map(b => `<th style="${b === state.batt ? 'color:#EAAA00' : ''}">${b}</th>`).join('')}</tr>` +
+    [0, 1, 2].map(k => `<tr><th>${k}</th>${batts.map(b => { const d = T.design.find(x => x.day === day && x.batt === b && x.chargers === k);
+      return `<td style="${cell(d.p_fail)}" title="mean min SOC ${fmt(100 * d.min_soc)}% ± ${fmt(100 * d.min_soc_ci, 1)}">${fmt(100 * d.p_fail)}%</td>`; }).join('')}</tr>`).join('') + '</table>').join('');
+}
+
+// ------------------------------------------------------------------ materials tab (stripped — stubs keep twin loop stable)
+const matsEnabled = !!document.querySelector('#mats');
+let xr = null, xs = null, xc = null, xg = null;
+if (matsEnabled) {
+  const fun = Object.entries(M.funnel), f0 = fun[0][1];
+  $('#funnel').innerHTML = fun.map(([k, v]) => `<div><span class="bar" style="width:${Math.max(3, 150 * Math.log10(v) / Math.log10(f0))}px"></span>${k}<em>${fmt(v)}</em></div>`).join('');
+  const order = M.picks.map((p, i) => i).filter(i => M.picks[i].kind === 'candidate').slice(0, 12)
+    .concat(M.picks.map((p, i) => i).filter(i => M.picks[i].kind === 'benchmark').sort((a, b) => M.picks[b].sq_exp - M.picks[a].sq_exp));
+  $('#mats').innerHTML = order.map(i => { const p = M.picks[i];
+    return `<div class="mat" data-i="${i}"><span class="f">${p.f}${p.kind === 'benchmark' ? '<span class="tag ok">BENCHMARK</span>' : ''}${p.toxic ? '<span class="tag bad">TOXIC</span>' : ''}</span>
+      <span class="e">${p.eg.toFixed(2)} eV</span><span class="s">${fmt(100 * E.practical * p.sq_exp, 1)}%</span></div>`; }).join('');
+  $('#mats').addEventListener('click', e => { const m = e.target.closest('.mat'); if (!m) return; state.mat = +m.dataset.i; showMaterial(); recompute(true); });
+  xr = new THREE.WebGLRenderer({ canvas: $('#xtal'), antialias: true, alpha: true });
+  xs = new THREE.Scene(); xc = new THREE.PerspectiveCamera(35, 1, .1, 500); xg = new THREE.Group();
+  xs.add(new THREE.HemisphereLight(0xffffff, 0x223344, 1.2), xg); const xl = new THREE.DirectionalLight(0xffffff, 1.6); xl.position.set(5, 8, 10); xs.add(xl);
+}
+function showMaterial() {
+  if (!matsEnabled) return;
+  const p = M.picks[state.mat];
+  $$('.mat').forEach(m => m.classList.toggle('on', +m.dataset.i === state.mat));
+  $('#m-title').innerHTML = `${p.f} · <a href="https://next-gen.materialsproject.org/materials/${p.id}" target="_blank" rel="noopener" style="color:#EAAA00">${p.id}</a>`;
+  const cal = M.cal;
+  $('#m-facts').innerHTML = [
+    ['DFT (PBE) gap', `${p.gap_pbe.toFixed(2)} eV`], ['calibrated gap', `${p.eg.toFixed(2)} ± ${cal.loo_rmse.toFixed(2)} eV`],
+    ['SQ limit at that gap', `${fmt(100 * p.sq, 1)}%`], ['expected SQ (10–90%)', `${fmt(100 * p.sq_exp, 1)}% (${fmt(100 * p.sq_p10, 0)}–${fmt(100 * p.sq_p90, 0)})`],
+    ['module assumed (×0.65)', `${fmt(100 * E.practical * p.sq_exp, 1)}%`], ['crystal system', p.cs], ['supply risk HHI', fmt(p.hhi || 0)],
+    ['scarcest element', `${fmt(p.ppm, p.ppm < 1 ? 3 : 0)} ppm in crust`],
+    [`at HTEM median film (${fmt(1000 * M.htem.d_median_um)} nm)`, `${fmt(100 * p.film_htem)}% of SQ`]].map(([a, b]) => `<dt>${a}</dt><dd>${b}</dd>`).join('');
+  const i = M.eg_grid.findIndex(e => e >= p.eg);
+  chart($('#c-sq'), { yMax: 35, unit: '%', series: [{ name: 'Shockley–Queisser (AM1.5G)', color: '#EAAA00', data: M.sq.map(v => 100 * v) }],
+    xLabels: [[0, '0.5'], [50, '1.0'], [100, '1.5'], [150, '2.0'], [250, '3.0 eV']], markX: i / (M.eg_grid.length - 1) });
+  $('#m-note').textContent = `Gap calibrated on ${cal.n} known semiconductors: Eg = ${cal.coef[0].toFixed(2)}·Eg_PBE + ${cal.coef[1].toFixed(2)}·Δχ + ${cal.coef[2].toFixed(2)} (leave-one-out RMSE ${cal.loo_rmse.toFixed(2)} eV). That error is wider than the SQ plateau, so the screen narrows the field but cannot rank it. The next step would be HSE06/GW or the lab.`;
+  // crystal: atoms as instanced spheres, unit cell as lines
+  xg.clear();
+  if (!p.xyz) return;
+  const L = p.lat.map(v => new THREE.Vector3(...v)), ctr = L[0].clone().add(L[1]).add(L[2]).multiplyScalar(.5);
+  const sph = new THREE.InstancedMesh(new THREE.SphereGeometry(.5, 20, 14), new THREE.MeshStandardMaterial({ roughness: .35, metalness: .1 }), p.xyz.length);
+  p.xyz.forEach((q, k) => { sph.setMatrixAt(k, new THREE.Matrix4().makeTranslation(q[0] - ctr.x, q[1] - ctr.y, q[2] - ctr.z));
+    const c = M.colors[p.sp[k]] || [200, 200, 200]; sph.setColorAt(k, new THREE.Color(c[0] / 255, c[1] / 255, c[2] / 255)); });
+  xg.add(sph);
+  const o = ctr.clone().negate(), corners = [[0, 0, 0], [1, 0, 0], [0, 1, 0], [0, 0, 1], [1, 1, 0], [1, 0, 1], [0, 1, 1], [1, 1, 1]]
+    .map(([a, b, c]) => o.clone().addScaledVector(L[0], a).addScaledVector(L[1], b).addScaledVector(L[2], c));
+  const E12 = [[0, 1], [0, 2], [0, 3], [1, 4], [1, 5], [2, 4], [2, 6], [3, 5], [3, 6], [4, 7], [5, 7], [6, 7]];
+  xg.add(new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(E12.flatMap(([a, b]) => [corners[a], corners[b]])),
+    new THREE.LineBasicMaterial({ color: 0xEAAA00, transparent: true, opacity: .6 })));
+  const R = Math.max(...L.map(v => v.length()));
+  xc.position.set(0, R * .6, R * 2.6); xc.lookAt(0, 0, 0);
+  const legend = [...new Set(p.sp)].map(e => { const c = M.colors[e] || [200, 200, 200]; return `<span style="color:rgb(${c})">●</span> ${e}`; }).join(' &nbsp;');
+  $('#m-title').innerHTML += ` <span style="float:right;font-weight:500;letter-spacing:0;text-transform:none">${legend}</span>`;
+}
+
+// ------------------------------------------------------------------ UI wiring
+const seg = (id, key, cb) => $(id).addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return;
+  $$(id + ' button').forEach(x => x.classList.toggle('on', x === b)); cb(b.dataset.v); });
+$$('.tabs button').forEach(b => b.onclick = () => { $$('.tabs button').forEach(x => x.classList.toggle('on', x === b));
+  $$('.pane').forEach(p => p.classList.toggle('on', p.id === 'p-' + b.dataset.t)); drawEnergy(); if (b.dataset.t === 'mat') showMaterial(); });
+if (document.querySelector('#mode')) seg('#mode', 'mode', v => { state.mode = v; $('#legend').style.display = v === 'solar' ? '' : 'none'; paintBuildings(); $('#k-mode').textContent = v; });
+if (document.querySelector('#strat')) seg('#strat', 'strat', v => { state.strat = v; recompute(); });
+seg('#speed', 'speed', v => state.speed = +v);
+const CAMS = { orbit: [[-450, 1150, 1700], CENTER], top: [[120, 3200, 61], CENTER],
+  kendeda: [[T.sites['Kendeda Building'][0] + 230, 200, -T.sites['Kendeda Building'][1] + 320], V3(...T.sites['Kendeda Building'])] };
+let camAnim = null;
+seg('#cams', 'cam', v => { camAnim = { from: camera.position.clone(), to: new THREE.Vector3(...CAMS[v][0]), tf: controls.target.clone(), tt: CAMS[v][1].clone(), k: 0 }; });
+const bind = (id, key, cb, show) => { if (!document.querySelector(id)) return; $(id).addEventListener('input', e => { state[key] = +e.target.value; if (show) $(show).textContent = cb ? cb(state[key]) : state[key]; if (key !== 'busScale' && cb !== null) after[key]?.(); }); };
+const after = { batt: drawDesign, roofs: () => recompute(), stor: () => recompute(), doy: () => drawEnergy() };
+bind('#batt', 'batt', v => v, '#battV'); bind('#roofs', 'roofs'); bind('#stor', 'stor');
+bind('#busScale', 'busScale', v => v + '×', '#busScaleV');
+bind('#doy', 'doy', v => dateOf(v).toLocaleDateString('en-US', { timeZone: 'UTC', weekday: 'short', month: 'short', day: 'numeric' }), '#doyV');
+$('#tod').addEventListener('input', e => state.t = +e.target.value);
+$('#labels').addEventListener('change', e => state.labels = e.target.checked);
+$('#play').onclick = () => { state.playing = !state.playing; $('#play').textContent = state.playing ? '❚❚' : '▶'; };
+$('#doyV').textContent = dateOf(state.doy).toLocaleDateString('en-US', { timeZone: 'UTC', weekday: 'short', month: 'short', day: 'numeric' });
+addEventListener('resize', () => { camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); composer.setSize(innerWidth, innerHeight); });
+
+// hover tooltips (buildings and buses)
+const ray = new THREE.Raycaster(), mouse = new THREE.Vector2(); let hoverAt = 0;
+canvas.addEventListener('pointermove', e => {
+  if (performance.now() - hoverAt < 60) return; hoverAt = performance.now();
+  mouse.set(e.clientX / innerWidth * 2 - 1, -e.clientY / innerHeight * 2 + 1); ray.setFromCamera(mouse, camera);
+  const tip = $('#tip'), hitBus = ray.intersectObjects(buses.filter(b => b.body.visible).map(b => b.body))[0];
+  let html = '';
+  if (hitBus) { const b = buses.find(x => x.body === hitBus.object);
+    html = `<b style="color:${b.r.color}">${b.r.name}</b> ${b.rec ? '· vehicle ' + b.rec.id : '· simulated'}<br>${fmt(b.v * 2.237, 0)} mph`;
+  } else { const h = ray.intersectObject(bMesh)[0];
+    if (h) { const i = bGeom.attributes.bid.getX(h.face.a), b = T.buildings[i];
+      html = `<b>${b.n || (b.c ? 'Campus building' : 'Off-campus building')}</b><br>${b.h.toFixed(0)} m tall` + (b.c && b.a ? ` · ${fmt(b.a)} m² roof footprint` : ''); } }
+  tip.style.display = html ? 'block' : 'none'; tip.innerHTML = html; tip.style.left = e.clientX + 14 + 'px'; tip.style.top = e.clientY + 14 + 'px';
+});
+
+// ------------------------------------------------------------------ loop
+function place(el, v3, show) {
+  const p = v3.clone().project(camera);
+  const vis = show && p.z < 1 && Math.abs(p.x) < 1.05 && Math.abs(p.y) < 1.05;
+  el.style.display = vis ? 'block' : 'none';
+  if (vis) { el.style.left = (p.x + 1) / 2 * innerWidth + 'px'; el.style.top = (1 - p.y) / 2 * innerHeight + 'px'; }
+}
+let last = performance.now(), tempC = 15, frame = 0;
+function loop(now) {
+  const dt = Math.min(.1, (now - last) / 1000); last = now;
+  if (state.playing) { state.t = (state.t + dt * state.speed) % 86400; if (frame % 6 === 0) $('#tod').value = state.t; }
+  if (frame % 3 === 0) tempC = updateSun();
+  updateBuses(state.t, tempC);
+  siteObjs.forEach(s => { const k = (now / 1400) % 1; s.ring.scale.setScalar(1 + k * 1.4); s.ring.material.opacity = 1 - k; place(s.label, s.g.position.clone().setY(s.h), state.labels); });
+  roofLbls.forEach(l => place(l.d, l.p, state.labels && state.mode !== 'arch'));
+  if (camAnim) { camAnim.k = Math.min(1, camAnim.k + dt / 1.6); const e = camAnim.k < .5 ? 2 * camAnim.k ** 2 : 1 - (-2 * camAnim.k + 2) ** 2 / 2;
+    camera.position.lerpVectors(camAnim.from, camAnim.to, e); controls.target.lerpVectors(camAnim.tf, camAnim.tt, e); if (camAnim.k >= 1) camAnim = null; }
+  controls.update(); composer.render(); frame++;
+  if (matsEnabled && xg && xg.children.length && $('#p-mat').classList.contains('on')) { xg.rotation.y += dt * .4;
+    const c = $('#xtal'); if (c.width !== c.clientWidth) { xr.setSize(c.clientWidth, c.clientHeight, false); xc.aspect = c.clientWidth / c.clientHeight; xc.updateProjectionMatrix(); }
+    xr.render(xs, xc); }
+  requestAnimationFrame(loop);
+}
+recompute(true); drawDesign(); showMaterial();
+requestAnimationFrame(loop);
+window.__twin = { state, ledger, buses, T, sun, renderer, scene, camera, routes, routeMesh };   // handy in the devtools console
+
+
+/* embed=1 hides chrome for app iframe */
+if (new URLSearchParams(location.search).get('embed') === '1') document.body.classList.add('embed');
+/* ---- StingerD-Grok plan highlight (query params + postMessage + polylines) ---- */
+(function planHighlight() {
+  const capturedStops = [];
+  scene.traverse(obj => {
+    if (obj.isMesh && obj.geometry && obj.geometry.type === 'CylinderGeometry' && obj.material && obj.material.emissive) {
+      capturedStops.push(obj);
+    }
+  });
+
+  const overlay = document.createElement('div');
+  overlay.id = 'plan-hl';
+  overlay.style.cssText = 'position:fixed;left:16px;bottom:16px;z-index:40;max-width:380px;padding:10px 12px;background:rgba(10,16,24,.9);border:1px solid rgba(255,255,255,.15);color:#e8eef6;font:12.5px/1.45 Inter,system-ui,sans-serif;display:none';
+  document.body.appendChild(overlay);
+
+  const originLat = (T.meta && T.meta.origin) ? T.meta.origin[0] : 33.7765;
+  const originLon = (T.meta && T.meta.origin) ? T.meta.origin[1] : -84.399;
+  const M_PER_DEG_LAT = 111320;
+  const M_PER_DEG_LON = 111320 * Math.cos(originLat * Math.PI / 180);
+
+  function latLonToLocal(lat, lon) {
+    const x = (lon - originLon) * M_PER_DEG_LON; // east
+    const y = (lat - originLat) * M_PER_DEG_LAT; // north
+    return [x, y];
+  }
+
+  function clearPlanOverlays() {
+    [...scene.children].filter(c => c.userData && (c.userData.planRibbon || c.userData.planPoly || c.name === 'plan-stop-beacon')).forEach(c => {
+      scene.remove(c);
+      if (c.geometry) c.geometry.dispose?.();
+      if (c.material) {
+        if (Array.isArray(c.material)) c.material.forEach(m => m.dispose?.());
+        else c.material.dispose?.();
+      }
+    });
+  }
+
+  function fitCameraToLocalPts(localPts) {
+    if (!localPts || !localPts.length || typeof camAnim === 'undefined') return;
+    let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+    for (const [x, y] of localPts) {
+      if (x < minX) minX = x; if (x > maxX) maxX = x;
+      if (y < minY) minY = y; if (y > maxY) maxY = y;
+    }
+    const cx = (minX + maxX) / 2;
+    const cy = (minY + maxY) / 2;
+    const span = Math.max(maxX - minX, maxY - minY, 120);
+    const height = Math.min(2200, Math.max(220, span * 1.55));
+    const target = V3(cx, cy, 0);
+    // Pull camera back SW of target for a readable overview of the plan corridor
+    const to = new THREE.Vector3(cx - span * 0.55, height, -(cy - span * 0.4));
+    camAnim = {
+      from: camera.position.clone(),
+      to,
+      tf: controls.target.clone(),
+      tt: target.clone(),
+      k: 0
+    };
+  }
+
+  function drawPolyline(coords, colorHex, width, kind, collectPts) {
+    if (!coords || coords.length < 2) return;
+    const pts = [];
+    for (const c of coords) {
+      if (!c || c.length < 2) continue;
+      const [x, y] = latLonToLocal(+c[0], +c[1]);
+      pts.push([x, y]);
+      if (collectPts) collectPts.push([x, y]);
+    }
+    if (pts.length < 2) return;
+    const col = new THREE.Color(colorHex);
+    const mesh = new THREE.Mesh(
+      ribbons([{ pts, w: width, color: col }], .7),
+      new THREE.MeshBasicMaterial({
+        vertexColors: true, toneMapped: false, transparent: true,
+        opacity: kind === 'ride' ? 0.95 : 0.88
+      })
+    );
+    mesh.userData.planPoly = true;
+    mesh.userData.planKind = kind;
+    // lift walk slightly so it sits above roads
+    mesh.position.y = kind === 'ride' ? 0.4 : 1.2;
+    scene.add(mesh);
+
+    // endpoints
+    const ends = [pts[0], pts[pts.length - 1]];
+    ends.forEach((p) => {
+      const beacon = new THREE.Mesh(
+        new THREE.SphereGeometry(kind === 'ride' ? 3.5 : 4.5, 12, 12),
+        new THREE.MeshBasicMaterial({ color: col, toneMapped: false })
+      );
+      beacon.position.copy(V3(p[0], p[1], kind === 'ride' ? 6 : 9));
+      beacon.name = 'plan-stop-beacon';
+      beacon.userData.planPoly = true;
+      scene.add(beacon);
+    });
+  }
+
+  function applyHighlight(payload) {
+    const routeIds = new Set((payload.route_ids || []).map(String));
+    const routeNames = new Set((payload.route_names || []).map(String));
+    const stopNames = new Set((payload.stop_names || []).map(String));
+    const polylines = payload.polylines || payload.paths || [];
+    const active = (r) => routeIds.has(String(r.id)) || routeNames.has(String(r.name));
+    const any = routeIds.size + routeNames.size + polylines.length > 0;
+
+    clearPlanOverlays();
+
+    buses.forEach((b) => {
+      const on = !any || active(b.r);
+      b.body.visible = on;
+      b.halo.visible = on;
+      b.body.material.opacity = on ? (b.r.synthetic ? .55 : 1) : .12;
+      b.body.material.transparent = true;
+    });
+
+    capturedStops.forEach(m => {
+      m.material.opacity = any ? 0.18 : 1;
+      m.material.transparent = true;
+    });
+
+    if (stopNames.size) {
+      routes.forEach(r => {
+        if (any && routeIds.size + routeNames.size > 0 && !active(r)) return;
+        r.stops.forEach(s => {
+          if (!stopNames.has(s.n)) return;
+          const beacon = new THREE.Mesh(
+            new THREE.SphereGeometry(5, 12, 12),
+            new THREE.MeshBasicMaterial({ color: 0xffd56a, toneMapped: false })
+          );
+          beacon.position.copy(V3(s.x, s.y));
+          beacon.position.y = 10;
+          beacon.name = 'plan-stop-beacon';
+          beacon.userData.planPoly = true;
+          scene.add(beacon);
+        });
+      });
+    }
+
+    if (routeMesh && routeMesh.material) {
+      routeMesh.material.opacity = any ? 0.22 : 0.9;
+      if (routeIds.size + routeNames.size > 0) {
+        const activeRoutes = routes.filter(active);
+        if (activeRoutes.length) {
+          const hl = new THREE.Mesh(
+            ribbons(activeRoutes.map(r => ({ pts: r.pts, w: 6.5, color: r.col.clone().multiplyScalar(2.0) })), .7),
+            new THREE.MeshBasicMaterial({ vertexColors: true, toneMapped: false, transparent: true, opacity: 0.75 })
+          );
+          hl.userData.planRibbon = true;
+          scene.add(hl);
+        }
+      }
+    }
+
+    // Draw walk / ride geometries from TripTrace and collect for camera fit
+    const fitPts = [];
+    polylines.forEach(pl => {
+      const kind = pl.kind || 'walk';
+      let color = pl.color;
+      if (!color && kind === 'ride') {
+        const r = routes.find(rr => String(rr.id) === String(pl.route_id) || rr.name === pl.route_name);
+        color = r ? '#' + r.col.getHexString() : '#7ec8ff';
+      }
+      if (!color) color = kind.includes('transfer') ? '#e8a87c' : '#f0c75e';
+      const width = kind === 'ride' ? 5.5 : 4.2;
+      drawPolyline(pl.coords || pl.geometry || [], color, width, kind === 'ride' ? 'ride' : 'walk', fitPts);
+    });
+    // Also include active route polylines for fit when no walk/ride coords
+    if (!fitPts.length && (routeIds.size || routeNames.size)) {
+      routes.filter(active).forEach(r => r.pts.forEach(p => fitPts.push(p)));
+    }
+
+    if (any && fitPts.length && payload.fit !== false) {
+      fitCameraToLocalPts(fitPts);
+    }
+
+    const walkN = polylines.filter(p => (p.kind || '').includes('walk')).length;
+    const rideN = polylines.filter(p => p.kind === 'ride').length;
+    const label = payload.label || [...routeNames].join(' + ') || [...routeIds].join(',');
+    overlay.style.display = any ? 'block' : 'none';
+    overlay.innerHTML = any
+      ? `<b>Plan overlay</b><br/>${label || 'Trip path'}<br/>
+         <span style="color:#f0c75e">Walk segs ${walkN}</span> · <span style="color:#7ec8ff">Ride segs ${rideN}</span><br/>
+         Stops: ${(payload.stop_names || []).slice(0, 5).join(' · ') || '—'}<br/>
+         <span style="opacity:.75">Camera fitted to plan corridor</span>`
+      : '';
+
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'stingerd-highlight-ack',
+        ok: true,
+        routes: [...routeNames],
+        polylines: polylines.length,
+        fitted: fitPts.length > 0
+      }, '*');
+    }
+  }
+
+  function fromQuery() {
+    const q = new URLSearchParams(location.search);
+    const routeIds = (q.get('routeIds') || q.get('routeId') || '').split(',').filter(Boolean);
+    const routeNames = (q.get('routeNames') || q.get('route') || '').split(',').filter(Boolean);
+    const stopNames = (q.get('stopNames') || q.get('stops') || '').split(',').filter(Boolean);
+    // Optional compact polyline JSON in ?paths= (URL-encoded JSON array)
+    let polylines = [];
+    const raw = q.get('paths') || q.get('polylines');
+    if (raw) {
+      try { polylines = JSON.parse(raw); } catch (e) { console.warn('bad paths query', e); }
+    }
+    if (routeIds.length || routeNames.length || stopNames.length || polylines.length) {
+      applyHighlight({ route_ids: routeIds, route_names: routeNames, stop_names: stopNames, polylines });
+    }
+  }
+
+  window.addEventListener('message', (ev) => {
+    const data = ev.data;
+    if (!data || data.type !== 'stingerd-highlight') return;
+    applyHighlight(data);
+  });
+  window.__twinHighlight = applyHighlight;
+  fromQuery();
+})();
+</script>
+</body>
+</html>

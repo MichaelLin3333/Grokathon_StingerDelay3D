@@ -1,0 +1,296 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:stinger-gpt:triptrace:v0",
+  "title": "TripTrace v0",
+  "type": "object",
+  "required": [
+    "id",
+    "version",
+    "generated_at",
+    "mode",
+    "origin",
+    "destination",
+    "constraints",
+    "chosen",
+    "alternatives",
+    "explanation_facts",
+    "allowed_numbers",
+    "warnings",
+    "verified"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "version": {
+      "const": "v0"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "mode": {
+      "const": "replay"
+    },
+    "origin": {
+      "$ref": "#/$defs/Place"
+    },
+    "destination": {
+      "$ref": "#/$defs/Place"
+    },
+    "constraints": {
+      "type": "object"
+    },
+    "chosen": {
+      "$ref": "#/$defs/TripPlan"
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/TripPlan"
+      }
+    },
+    "explanation_facts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "allowed_numbers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "verified": {
+      "type": "boolean"
+    }
+  },
+  "$defs": {
+    "Place": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "lat",
+        "lon"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "lat": {
+          "type": "number"
+        },
+        "lon": {
+          "type": "number"
+        }
+      }
+    },
+    "Leg": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "from_name",
+        "to_name",
+        "duration_minutes",
+        "distance_m",
+        "geometry"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "walk",
+            "wait",
+            "ride"
+          ]
+        },
+        "from_name": {
+          "type": "string"
+        },
+        "to_name": {
+          "type": "string"
+        },
+        "duration_minutes": {
+          "type": "number",
+          "minimum": 0
+        },
+        "distance_m": {
+          "type": "number",
+          "minimum": 0
+        },
+        "route_id": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "route_name": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "color": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "geometry": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "number",
+                "minimum": -90,
+                "maximum": 90
+              },
+              {
+                "type": "number",
+                "minimum": -180,
+                "maximum": 180
+              }
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "instruction": {
+          "type": "string"
+        }
+      }
+    },
+    "TripPlan": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "legs",
+        "departure_time",
+        "arrival_time",
+        "leave_by",
+        "duration_minutes",
+        "quantiles",
+        "p_on_time",
+        "p_catch",
+        "geometry",
+        "synthetic",
+        "social_applied",
+        "confidence_label"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "legs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/Leg"
+          }
+        },
+        "duration_minutes": {
+          "type": "number",
+          "minimum": 0
+        },
+        "quantiles": {
+          "type": "object",
+          "required": [
+            "p10",
+            "p50",
+            "p90"
+          ],
+          "properties": {
+            "p10": {
+              "type": "number",
+              "minimum": 0
+            },
+            "p50": {
+              "type": "number",
+              "minimum": 0
+            },
+            "p90": {
+              "type": "number",
+              "minimum": 0
+            }
+          }
+        },
+        "geometry": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "prefixItems": [
+              {
+                "type": "number",
+                "minimum": -90,
+                "maximum": 90
+              },
+              {
+                "type": "number",
+                "minimum": -180,
+                "maximum": 180
+              }
+            ],
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "p_on_time": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "p_catch": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "synthetic": {
+          "type": "boolean"
+        },
+        "social_applied": {
+          "type": "boolean"
+        },
+        "confidence_label": {
+          "type": "string"
+        },
+        "departure_time": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "arrival_time": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "leave_by": {
+          "type": "string",
+          "format": "date-time"
+        }
+      }
+    }
+  }
+}

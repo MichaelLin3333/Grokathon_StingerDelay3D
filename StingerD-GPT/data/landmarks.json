@@ -1,0 +1,74 @@
+[
+  {
+    "id": "student-center",
+    "name": "Student Center",
+    "lat": 33.77375,
+    "lon": -84.39888
+  },
+  {
+    "id": "klaus",
+    "name": "Klaus Computing",
+    "lat": 33.7773,
+    "lon": -84.39615
+  },
+  {
+    "id": "kendeda",
+    "name": "Kendeda Building",
+    "lat": 33.7784,
+    "lon": -84.40015
+  },
+  {
+    "id": "clough",
+    "name": "Clough Commons",
+    "lat": 33.77493,
+    "lon": -84.3964
+  },
+  {
+    "id": "west-village",
+    "name": "West Village",
+    "lat": 33.77962,
+    "lon": -84.40471
+  },
+  {
+    "id": "midtown-marta",
+    "name": "Midtown MARTA",
+    "lat": 33.78082,
+    "lon": -84.38641
+  },
+  {
+    "id": "tech-square",
+    "name": "Tech Square",
+    "lat": 33.7768,
+    "lon": -84.38975
+  },
+  {
+    "id": "crc",
+    "name": "Campus Recreation Center",
+    "lat": 33.7754,
+    "lon": -84.4032
+  },
+  {
+    "id": "north-avenue",
+    "name": "North Avenue Apartments",
+    "lat": 33.77001,
+    "lon": -84.39145
+  },
+  {
+    "id": "library",
+    "name": "Price Gilbert Library",
+    "lat": 33.77442,
+    "lon": -84.39582
+  },
+  {
+    "id": "mccamish",
+    "name": "McCamish Pavilion",
+    "lat": 33.78083,
+    "lon": -84.3927
+  },
+  {
+    "id": "coda",
+    "name": "CODA",
+    "lat": 33.7726,
+    "lon": -84.3873
+  }
+]

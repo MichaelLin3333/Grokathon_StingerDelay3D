@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102329"><meta name="description" content="Your campus, connected. Voice-first walking and Stinger trip planning for Georgia Tech.">
+<title>Buzz Route · Your campus, connected</title>
+<link rel="icon" href="/assets/buzz.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<header class="topbar">
+ <a class="brand" href="#plan" aria-label="Buzz Route home"><span class="brand-mark">b<span>r</span><i></i></span><span>BUZZ ROUTE<small>GEORGIA TECH</small></span></a>
+ <nav class="main-nav" aria-label="Main navigation"><a href="#plan" data-page="plan" class="active">Plan a trip</a><a href="#schedule" data-page="schedule">My day<span class="nav-dot"></span></a><a href="#saved" data-page="saved">Saved</a></nav>
+ <div class="header-actions"><span class="replay-tag"><i></i> CAMPUS REPLAY</span><button class="icon-button" id="connections" aria-label="Manage connections" title="Manage connections"></button><span class="avatar" title="Local demo profile">GT</span></div>
+</header>
+<main class="workspace">
+ <aside class="sidebar" aria-label="Trip planning"><div id="sidebar-content"><div class="loading-state">Preparing your campus…</div></div><footer class="sidebar-footer"><span class="status-dot"></span><span id="api-status">Connecting to planner</span><button id="about-data" aria-label="About these estimates">ⓘ</button></footer></aside>
+ <section class="map-section" aria-label="Campus map">
+  <div id="campus-map"></div>
+  <div class="map-top"><div class="map-heading"><span class="eyebrow">THE CAMPUS, IN MOTION</span><h1>Find your <em>next move.</em></h1><p>Less guessing. More getting there.</p></div><button class="map-locate floating-button" id="locate" title="Use my location" aria-label="Use my location"></button></div>
+  <div class="map-tools floating-panel"><div class="view-switch" aria-label="Map view"><button class="active" id="view-3d">3D</button><button id="view-2d">2D</button></div><span class="tool-divider"></span><button id="toggle-buses" class="tool-button active" aria-pressed="true" title="Toggle buses"></button><button id="toggle-labels" class="tool-button active" aria-pressed="true" title="Toggle labels"></button><button id="reset-camera" class="tool-button" title="Reset camera" aria-label="Reset camera"></button></div>
+  <div class="map-legend floating-panel" id="route-legend"></div>
+  <div class="map-bottom"><div class="replay-panel floating-panel"><button id="play-replay" class="play-button" aria-label="Pause replay"></button><div class="replay-time"><span class="eyebrow">REPLAY CLOCK · ATLANTA</span><strong id="replay-clock">9:30 AM</strong></div><input id="replay-time" type="range" min="25200" max="79200" step="30" value="34200" aria-label="Replay time"><button id="replay-speed" title="Replay speed">30×</button></div><div class="map-caption"><span id="map-status">Loading campus geometry</span><span>OSM · Stinger GPS, Mar 2026</span></div></div>
+  <div class="trip-session floating-panel" id="trip-session" hidden><div><span class="eyebrow">SIMULATED TRIP</span><strong id="session-instruction">Follow your route</strong></div><div class="session-actions"><button id="replan-session" class="text-button">Test delay + replan</button><button id="stop-session" class="text-button">End</button></div><progress id="session-progress" max="100" value="0"></progress></div>
+  <section class="assistant-panel floating-panel" id="assistant-panel" hidden aria-label="Grok travel helper"><div class="assistant-header"><div class="assistant-icon">✳</div><div><strong>Grok travel helper</strong><span id="assistant-provider">Verified trip guidance</span></div><button class="icon-button" id="close-assistant" aria-label="Close helper">×</button></div><div id="chat-messages" class="chat-messages" role="log" aria-live="polite"><div class="chat-bubble bot">Where are you headed? I can help with your next class, departure time, or current route.</div></div><div class="chat-suggestions"><button data-prompt="When should I leave for my next class?">My next class</button><button data-prompt="If I leave now, will I be on time?">Will I make it?</button></div><form id="chat-form"><input id="chat-input" placeholder="Ask about your next move…" autocomplete="off" aria-label="Message to Grok helper"><button type="button" id="voice-chat" class="icon-button" aria-label="Speak a request"></button><button class="send-button" type="submit" aria-label="Send message">↑</button></form><div class="assistant-footnote">Answers grounded in your verified trip.</div></section>
+  <button class="assistant-launcher" id="open-assistant"><span>✳</span> Ask Grok <kbd>G</kbd></button>
+ </section>
+</main>
+<div id="toast" class="toast" role="status" hidden></div>
+<dialog id="settings-dialog"><div class="dialog-header"><div><span class="eyebrow">MAKE IT YOURS</span><h2>Your connections</h2></div><button class="icon-button" id="close-settings" aria-label="Close connections">×</button></div><div id="settings-content"></div></dialog>
+<noscript>This trip planner needs JavaScript. Enable it and reload this page.</noscript>
+<script type="module" src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,637 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "StingerD-GPT API",
+    "version": "0.1.0",
+    "description": "Historical replay baseline. No trained-model or accessibility guarantees. All times timezone aware. Quantiles are travel minutes, probabilities are fractions."
+  },
+  "servers": [
+    {
+      "url": "http://127.0.0.1:8765"
+    }
+  ],
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "health",
+        "responses": {
+          "200": {
+            "description": "JSON response"
+          }
+        }
+      }
+    },
+    "/places": {
+      "get": {
+        "summary": "places",
+        "responses": {
+          "200": {
+            "description": "JSON response"
+          }
+        }
+      }
+    },
+    "/routes": {
+      "get": {
+        "summary": "routes",
+        "responses": {
+          "200": {
+            "description": "JSON response"
+          }
+        }
+      }
+    },
+    "/calendar/events": {
+      "get": {
+        "summary": "calendar events",
+        "responses": {
+          "200": {
+            "description": "JSON response"
+          }
+        }
+      }
+    },
+    "/calendar/next": {
+      "get": {
+        "summary": "calendar next",
+        "responses": {
+          "200": {
+            "description": "JSON response"
+          }
+        }
+      }
+    },
+    "/signals/x": {
+      "get": {
+        "summary": "signals x",
+        "responses": {
+          "200": {
+            "description": "JSON response"
+          }
+        }
+      }
+    },
+    "/upstream": {
+      "get": {
+        "summary": "upstream",
+        "responses": {
+          "200": {
+            "description": "JSON response"
+          }
+        }
+      }
+    },
+    "/integrations/status": {
+      "get": {
+        "summary": "integrations status",
+        "responses": {
+          "200": {
+            "description": "JSON response"
+          }
+        }
+      }
+    },
+    "/trips/plan": {
+      "post": {
+        "summary": "trips plan",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PlanRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Verified trace",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TripTrace"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Invalid request"
+          }
+        }
+      }
+    },
+    "/schedule": {
+      "post": {
+        "summary": "schedule",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "JSON response"
+          },
+          "422": {
+            "description": "Invalid request"
+          }
+        }
+      }
+    },
+    "/grok/chat": {
+      "post": {
+        "summary": "grok chat",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "JSON response"
+          },
+          "422": {
+            "description": "Invalid request"
+          }
+        }
+      }
+    },
+    "/calendar/import": {
+      "post": {
+        "summary": "calendar import",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "JSON response"
+          },
+          "422": {
+            "description": "Invalid request"
+          }
+        }
+      }
+    },
+    "/trips/verify": {
+      "post": {
+        "summary": "trips verify",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "JSON response"
+          },
+          "422": {
+            "description": "Invalid request"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "PlanRequest": {
+        "type": "object",
+        "required": [
+          "origin",
+          "destination"
+        ],
+        "properties": {
+          "origin": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "required": [
+                  "id",
+                  "name",
+                  "lat",
+                  "lon"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "lat": {
+                    "type": "number"
+                  },
+                  "lon": {
+                    "type": "number"
+                  }
+                }
+              }
+            ]
+          },
+          "destination": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "required": [
+                  "id",
+                  "name",
+                  "lat",
+                  "lon"
+                ],
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "lat": {
+                    "type": "number"
+                  },
+                  "lon": {
+                    "type": "number"
+                  }
+                }
+              }
+            ]
+          },
+          "depart_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "arrive_by": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time"
+          },
+          "walk_speed": {
+            "type": "number",
+            "minimum": 0.5,
+            "maximum": 2.5,
+            "default": 1.35
+          },
+          "delay_minutes": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 30,
+            "default": 0
+          },
+          "horizon_minutes": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 360
+          },
+          "avoid_stairs": {
+            "type": "boolean"
+          },
+          "social_factor": {
+            "type": "boolean"
+          },
+          "preferred_mode": {
+            "enum": [
+              "best",
+              "bus",
+              "walk"
+            ]
+          },
+          "mode": {
+            "const": "replay"
+          },
+          "evaluate_at": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date-time",
+            "description": "With arrive_by only: assess this fixed replay departure against the deadline instead of searching latest leave-by."
+          }
+        }
+      },
+      "TripTrace": {
+        "title": "TripTrace v0",
+        "type": "object",
+        "required": [
+          "id",
+          "version",
+          "generated_at",
+          "mode",
+          "origin",
+          "destination",
+          "constraints",
+          "chosen",
+          "alternatives",
+          "explanation_facts",
+          "allowed_numbers",
+          "warnings",
+          "verified"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "version": {
+            "const": "v0"
+          },
+          "generated_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "mode": {
+            "const": "replay"
+          },
+          "origin": {
+            "$ref": "#/components/schemas/Place"
+          },
+          "destination": {
+            "$ref": "#/components/schemas/Place"
+          },
+          "constraints": {
+            "type": "object"
+          },
+          "chosen": {
+            "$ref": "#/components/schemas/TripPlan"
+          },
+          "alternatives": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TripPlan"
+            }
+          },
+          "explanation_facts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "allowed_numbers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "warnings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "verified": {
+            "type": "boolean"
+          }
+        }
+      },
+      "Place": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "lat",
+          "lon"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "lat": {
+            "type": "number"
+          },
+          "lon": {
+            "type": "number"
+          }
+        }
+      },
+      "Leg": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "from_name",
+          "to_name",
+          "duration_minutes",
+          "distance_m",
+          "geometry"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "kind": {
+            "enum": [
+              "walk",
+              "wait",
+              "ride"
+            ]
+          },
+          "from_name": {
+            "type": "string"
+          },
+          "to_name": {
+            "type": "string"
+          },
+          "duration_minutes": {
+            "type": "number",
+            "minimum": 0
+          },
+          "distance_m": {
+            "type": "number",
+            "minimum": 0
+          },
+          "route_id": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "route_name": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "color": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "geometry": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "type": "number",
+                  "minimum": -90,
+                  "maximum": 90
+                },
+                {
+                  "type": "number",
+                  "minimum": -180,
+                  "maximum": 180
+                }
+              ],
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "instruction": {
+            "type": "string"
+          }
+        }
+      },
+      "TripPlan": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "legs",
+          "departure_time",
+          "arrival_time",
+          "leave_by",
+          "duration_minutes",
+          "quantiles",
+          "p_on_time",
+          "p_catch",
+          "geometry",
+          "synthetic",
+          "social_applied",
+          "confidence_label"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "legs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/components/schemas/Leg"
+            }
+          },
+          "duration_minutes": {
+            "type": "number",
+            "minimum": 0
+          },
+          "quantiles": {
+            "type": "object",
+            "required": [
+              "p10",
+              "p50",
+              "p90"
+            ],
+            "properties": {
+              "p10": {
+                "type": "number",
+                "minimum": 0
+              },
+              "p50": {
+                "type": "number",
+                "minimum": 0
+              },
+              "p90": {
+                "type": "number",
+                "minimum": 0
+              }
+            }
+          },
+          "geometry": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "prefixItems": [
+                {
+                  "type": "number",
+                  "minimum": -90,
+                  "maximum": 90
+                },
+                {
+                  "type": "number",
+                  "minimum": -180,
+                  "maximum": 180
+                }
+              ],
+              "minItems": 2,
+              "maxItems": 2
+            }
+          },
+          "p_on_time": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "p_catch": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 1
+          },
+          "synthetic": {
+            "type": "boolean"
+          },
+          "social_applied": {
+            "type": "boolean"
+          },
+          "confidence_label": {
+            "type": "string"
+          },
+          "departure_time": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "arrival_time": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "leave_by": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    }
+  }
+}

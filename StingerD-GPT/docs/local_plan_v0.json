@@ -1,0 +1,1 @@
+{"$schema":"https://json-schema.org/draft/2020-12/schema","title":"LocalSavedPlanV0","type":"object","required":["id","day","label","tripTrace","createdAt"],"properties":{"id":{"type":"string"},"day":{"type":"string","format":"date"},"label":{"type":"string"},"tripTrace":{"$ref":"trip-trace.schema.json"},"createdAt":{"type":"string","format":"date-time"}}}

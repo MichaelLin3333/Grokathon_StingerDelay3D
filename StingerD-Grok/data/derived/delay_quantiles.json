@@ -1,0 +1,67 @@
+{
+  "generated_for": "StingerD-Grok",
+  "source_file": "/Users/yuyanglin/Desktop/GT/Grokathon/stinger-delay/Platform/red_line/data/red_line_data.csv",
+  "method": "ETA realization errors from red_line polls (eta<=45s \u2248 arrival), winsorized, blended with stinger-delay summary lateness.",
+  "todos": [
+    "Export trained HistGradientBoosting/ExtraTrees/XGB quantile predictors from Analysis notebooks",
+    "Join stop/route/time-of-day features instead of ETA-only bins",
+    "Add live TransLoc/GPS adapter to refresh delays in realtime"
+  ],
+  "bins": [
+    {
+      "name": "under_2_min",
+      "eta_lo_s": 0,
+      "eta_hi_s": 120,
+      "n": 218,
+      "delay_p10_s": -6.9,
+      "delay_p50_s": 63.0,
+      "delay_p90_s": 243.0,
+      "source": "red_line_blended_summary"
+    },
+    {
+      "name": "2_to_5_min",
+      "eta_lo_s": 120,
+      "eta_hi_s": 300,
+      "n": 35,
+      "delay_p10_s": -15.8,
+      "delay_p50_s": 105.0,
+      "delay_p90_s": 256.0,
+      "source": "red_line_blended_summary"
+    },
+    {
+      "name": "5_to_10_min",
+      "eta_lo_s": 300,
+      "eta_hi_s": 600,
+      "n": 0,
+      "delay_p10_s": 60,
+      "delay_p50_s": 220,
+      "delay_p90_s": 450,
+      "source": "summary_fallback_thin_sample"
+    },
+    {
+      "name": "10_to_20_min",
+      "eta_lo_s": 600,
+      "eta_hi_s": 1200,
+      "n": 0,
+      "delay_p10_s": 80,
+      "delay_p50_s": 320,
+      "delay_p90_s": 600,
+      "source": "summary_fallback_thin_sample"
+    },
+    {
+      "name": "20_plus_min",
+      "eta_lo_s": 1200,
+      "eta_hi_s": 10000,
+      "n": 0,
+      "delay_p10_s": 100,
+      "delay_p50_s": 400,
+      "delay_p90_s": 750,
+      "source": "summary_fallback_thin_sample"
+    }
+  ],
+  "headway_wait_s": {
+    "p10_s": 60,
+    "p50_s": 240,
+    "p90_s": 480
+  }
+}
